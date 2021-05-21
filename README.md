@@ -1,6 +1,8 @@
 ### Hi there 👋
 
-## Take a look what I found!!!
+#### It's so ✨cooooooool✨.
+
+[![PSheon's GitHub stats](https://github-readme-stats.vercel.app/api?username=PSheon&show_icons=true&theme=react&count_private=true)](https://github.com/PSheon/PSheon)
 
 <!--
 **PSheon/PSheon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
