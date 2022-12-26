@@ -4,7 +4,24 @@
 
 ## Hi there 👋
 
-✨ Welcome to my page
+<p align="left">
+  <a href="https://twitter.com/0xPSheon" target="_blank" style="margin-right: 20px">
+    <img
+      src="https://www.vectorlogo.zone/logos/twitter/twitter-official.svg"
+      alt="twitter"
+      width="24"
+      height="24"
+    />
+  </a>
+  <a href="https://www.linkedin.com/in/psheon/" target="_blank" style="margin-right: 20px">
+    <img
+      src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg"
+      alt="linkedin"
+      width="24"
+      height="24"
+    />
+  </a>
+</p>
 
 ### 🌟 Projects
 
@@ -16,6 +33,8 @@
     <img height="125px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Leetcode&theme=dracula&hide_border=true" alt="leetcode" />
   </a>
 </p>
+
+✨ Welcome to my page, I'm Paul a passionate dapp developer and from Taiwan. my passion for software lies with dreaming up ideas and making them come true with elegant functions. I take great care in the experience, architecture, and code quality of the things I build.
 
 ### 👻 Tools
 
@@ -270,4 +289,4 @@
   />
 </p>
 
-![views](https://komarev.com/ghpvc/?username=psheon&color=ff69b4&label=PROFILE+VIEWS)
+![views](https://komarev.com/ghpvc/?username=psheon&color=ff69b4&label=Visitors)
