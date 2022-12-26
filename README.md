@@ -34,6 +34,8 @@
   </a>
 </p>
 
+✨ Welcome to my page, I'm Paul a passionate dapp developer and from Taiwan. my passion for software lies with dreaming up ideas and making them come true with elegant functions. I take great care in the experience, architecture, and code quality of the things I build.
+
 ### 👻 Tools
 
 <p align="left">
