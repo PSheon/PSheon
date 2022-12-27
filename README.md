@@ -83,18 +83,7 @@
 
 ### 🍹 Statistics & Achievements
 
-<!-- <p align="left">
-  <img
-    height="150px"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&count_private=true&hide=javascript,html&langs_count=4"
-  />
-  <img
-    height="150px"
-    src="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&count_private=true&show_icons=true"
-  />
-</p> -->
-
-<p align="left">
+<p align="center">
   <picture>
     <source
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&count_private=true&hide=javascript,html&langs_count=4"
