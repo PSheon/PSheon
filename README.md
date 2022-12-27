@@ -68,9 +68,6 @@
 [<img align="left" src="./assets/images/skills/reactjs-icon.svg" alt="react" width="40" height="40" style="padding-right:10px;" />](https://reactjs.org/)
 
 <br />
-<br />
-
----
 
 [<img align="left" src="./assets/images/skills/redux.svg" alt="redux" width="40" height="40" style="padding-right:10px;" />](https://redux.js.org/)
 [<img align="left" src="./assets/images/skills/react-query.svg" alt="react query" width="40" height="40" style="padding-right:10px;" />](https://react-query-v3.tanstack.com/)
@@ -88,9 +85,6 @@
 [<img align="left" src="./assets/images/skills/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" style="padding-right:10px;" />](https://www.tensorflow.org/)
 
 <br />
-<br />
-
----
 
 [<img align="left" src="./assets/images/skills/solidity-light.svg" alt="solidity" width="40" height="40" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-light-mode-only)
 [<img align="left" src="./assets/images/skills/solidity-dark.svg" alt="solidity" width="40" height="40" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-dark-mode-only)
