@@ -87,6 +87,8 @@
 <br />
 <br />
 
+---
+
 ### 🍹 Statistics & Achievements
 
 <p align="left">
