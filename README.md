@@ -6,33 +6,20 @@
 
 ✨ I'm Paul. Frontend Architect, Web Developer, Consultant and Crypto Enthusiast from Taipei (Taiwan).
 
-### 🌟 Projects
+### 🌟 I'm currently working on
 
-<p align="left">
+<p align="center">
   <a href="https://github.com/PSheon/Media-Gallery-Frontend" target="_blank" rel="noreferrer noopener">
-    <img height="125px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true" alt="media gallery frontend" />
-  </a>
-  <a href="https://github.com/PSheon/Leetcode" target="_blank" rel="noreferrer noopener">
-    <img height="125px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Leetcode&theme=dracula&hide_border=true" alt="leetcode" />
+    <img height="165px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true" alt="media gallery frontend" />
   </a>
 </p>
 
-### 👻 Tools
-
-<p align="left">
-  <a href="https://psheon.github.io/imageTool/" target="_blank" rel="noreferrer noopener">
-    <img height="150px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=imageTool&theme=dracula&hide_border=true" alt="Image Edit Tool" />
-  </a>
-  <a href="https://github.com/PSheon/video-to-frames/" target="_blank" rel="noreferrer noopener">
-    <img height="150px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=video-to-frames&theme=dracula&hide_border=true" alt="影片分割 + 肢體偵測 工具" />
-  </a>
-</p>
-
-### Connect with me
+### 🐧 Connect with me
 
 [<img align="left" src="./assets/images/social-media/twitter.svg" alt="PSheon | Twitter" width="40" height="40" style="padding-right:10px;" />](https://twitter.com/0xPSheon)
 [<img align="left" src="./assets/images/social-media/linkedin.svg" alt="PSheon | Twitter" width="40" height="40" style="padding-right:10px;" />](https://www.linkedin.com/in/psheon/)
 
+<br />
 <br />
 
 ### 🔥 Languages and Skills
@@ -105,5 +92,7 @@
     />
   </picture>
 </p>
+
+---
 
 ![views](https://komarev.com/ghpvc/?username=psheon&color=ff69b4&label=Visitors)
