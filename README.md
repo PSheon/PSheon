@@ -100,7 +100,7 @@
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&count_private=true&hide=javascript,html&langs_count=4"
     />
     <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide_border=true&count_private=true&hide=javascript,html&langs_count=4"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&count_private=true&hide=javascript,html&langs_count=4"
       alt="PSheon | Most Usage Languages"
       height="150px"
     />
@@ -110,7 +110,7 @@
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&count_private=true&show_icons=true"
     />
     <img
-      src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&hide_border=true&count_private=true&show_icons=true"
+      src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&count_private=true&show_icons=true"
       alt="PSheon | Most Usage Languages"
       height="150px"
     />
