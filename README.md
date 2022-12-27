@@ -51,8 +51,8 @@
 
 ### 🔥 Languages and Skills
 
-[<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />](https://aws.amazon.com)
-[<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />](https://aws.amazon.com)
+![<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />](https://aws.amazon.com)
+![<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />](https://aws.amazon.com)
 [<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />](https://aws.amazon.com)
 
 <p align="left">
