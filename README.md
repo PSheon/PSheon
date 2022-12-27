@@ -51,7 +51,7 @@
 
 ### 🔥 Languages and Skills
 
-[<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />](https://aws.amazon.com)
+[<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />][https://aws.amazon.com]
 [<img align="left" src="./assets/images/skills/microsoft_azure-icon.svg" alt="azure" width="40" height="40" style="padding-right:10px;" />](https://azure.microsoft.com/)
 [<img align="left" src="./assets/images/skills/ubuntu-icon.svg" alt="ubuntu" width="40" height="40" style="padding-right:10px;" />](https://ubuntu.com/)
 [<img align="left" src="./assets/images/skills/git-scm-icon.svg" alt="git" width="40" height="40" style="padding-right:10px;" />](https://git-scm.com/)
