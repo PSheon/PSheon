@@ -10,7 +10,7 @@
 
 <p align="left">
   <a href="https://github.com/PSheon/Media-Gallery-Frontend" target="_blank" rel="noreferrer noopener">
-    <img height="165px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true" alt="media gallery frontend" />
+    <img height="135px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true" alt="media gallery frontend" />
   </a>
 </p>
 
