@@ -51,247 +51,41 @@
 
 ### 🔥 Languages and Skills
 
-[<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />][!https://aws.amazon.com]
-[<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />](!https://aws.amazon.com)
 [<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="40" height="40" style="padding-right:10px;" />](https://aws.amazon.com)
+[<img align="left" src="./assets/images/skills/microsoft_azure-icon.svg" alt="azure" width="40" height="40" style="padding-right:10px;" />](https://azure.microsoft.com/)
+[<img align="left" src="./assets/images/skills/ubuntu-icon.svg" alt="ubuntu" width="40" height="40" style="padding-right:10px;" />](https://ubuntu.com/)
+[<img align="left" src="./assets/images/skills/git-scm-icon.svg" alt="git" width="40" height="40" style="padding-right:10px;" />](https://git-scm.com/)
+[<img align="left" src="./assets/images/skills/file_type_vscode.svg" alt="vscode" width="40" height="40" style="padding-right:10px;" />](https://code.visualstudio.com/)
+[<img align="left" src="./assets/images/skills/docker-icon.svg" alt="docker" width="40" height="40" style="padding-right:10px;" />](https://www.docker.com/)
+[<img align="left" src="./assets/images/skills/eslint-icon.svg" alt="eslint" width="40" height="40" style="padding-right:10px;" />](https://eslint.org/)
+[<img align="left" src="./assets/images/skills/css3-original-wordmark.svg" alt="css3" width="40" height="40" style="padding-right:10px;" />](https://www.w3schools.com/css/)
+[<img align="left" src="./assets/images/skills/html5-original-wordmark.svg" alt="html5" width="40" height="40" style="padding-right:10px;" />](https://www.w3.org/html/)
+[<img align="left" src="./assets/images/skills/threejs-light.svg" alt="three.js" width="40" height="40" style="padding-right:10px;" />](https://threejs.org/#gh-light-mode-only)
+[<img align="left" src="./assets/images/skills/threejs-dark.svg" alt="three.js" width="40" height="40" style="padding-right:10px;" />](https://threejs.org/#gh-dark-mode-only)
+[<img align="left" src="./assets/images/skills/typescript-original.svg" alt="typescript" width="40" height="40" style="padding-right:10px;" />](https://www.typescriptlang.org/)
+[<img align="left" src="./assets/images/skills/nextjs-light.svg" alt="next.js" width="40" height="40" style="padding-right:10px;" />](https://nextjs.org/#gh-light-mode-only)
+[<img align="left" src="./assets/images/skills/nextjs-dark.svg" alt="next.js" width="40" height="40" style="padding-right:10px;" />](https://nextjs.org/#gh-dark-mode-only)
+[<img align="left" src="./assets/images/skills/reactjs-icon.svg" alt="react" width="40" height="40" style="padding-right:10px;" />](https://reactjs.org/)
+[<img align="left" src="./assets/images/skills/redux.svg" alt="redux" width="40" height="40" style="padding-right:10px;" />](https://redux.js.org/)
+[<img align="left" src="./assets/images/skills/react-query.svg" alt="react query" width="40" height="40" style="padding-right:10px;" />](https://react-query-v3.tanstack.com/)
+[<img align="left" src="./assets/images/skills/iconify-light.svg" alt="iconify" width="40" height="40" style="padding-right:10px;" />](https://iconify.design/#gh-light-mode-only)
+[<img align="left" src="./assets/images/skills/iconify-dark.svg" alt="iconify" width="40" height="40" style="padding-right:10px;" />](https://iconify.design/#gh-dark-mode-only)
+[<img align="left" src="./assets/images/skills/sass-original.svg" alt="sass" width="40" height="40" style="padding-right:10px;" />](https://sass-lang.com)
+[<img align="left" src="./assets/images/skills/tailwindcss-icon.svg" alt="tailwind" width="40" height="40" style="padding-right:10px;" />](https://tailwindcss.com/)
+[<img align="left" src="./assets/images/skills/mui.svg" alt="mui" width="40" height="40" style="padding-right:10px;" />](https://mui.com/)
+[<img align="left" src="./assets/images/skills/jestjsio-icon.svg" alt="jest" width="40" height="40" style="padding-right:10px;" />](https://jestjs.io/)
+[<img align="left" src="./assets/images/skills/cypress-icon.svg" alt="cypress" width="40" height="40" style="padding-right:10px;" />](https://www.cypress.io/)
+[<img align="left" src="./assets/images/skills/mongodb-icon.svg" alt="mongodb" width="40" height="40" style="padding-right:10px;" />](https://www.mongodb.com/)
+[<img align="left" src="./assets/images/skills/postgresql-icon.svg" alt="postgreSQL" width="40" height="40" style="padding-right:10px;" />](https://www.postgresql.org/)
+[<img align="left" src="./assets/images/skills/getpostman-icon.svg" alt="postman" width="40" height="40" style="padding-right:10px;" />](https://www.postman.com/)
+[<img align="left" src="./assets/images/skills/python-original.svg" alt="python" width="40" height="40" style="padding-right:10px;" />](https://www.python.org)
+[<img align="left" src="./assets/images/skills/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" style="padding-right:10px;" />](https://www.tensorflow.org/)
+[<img align="left" src="./assets/images/skills/solidity-light.svg" alt="solidity" width="40" height="40" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-light-mode-only)
+[<img align="left" src="./assets/images/skills/solidity-dark.svg" alt="solidity" width="40" height="40" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-dark-mode-only)
+[<img align="left" src="./assets/images/skills/hardhat-icon.svg" alt="hardhat" width="40" height="40" style="padding-right:10px;" />](https://hardhat.org/)
 
-<p align="left">
-  <a href="https://aws.amazon.com" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/amazon_aws-icon.svg"
-      alt="aws"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://azure.microsoft.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/microsoft_azure-icon.svg"
-      alt="azure"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://ubuntu.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/ubuntu-icon.svg"
-      alt="ubuntu"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://git-scm.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/git-scm-icon.svg"
-      alt="git"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://code.visualstudio.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/file_type_vscode.svg"
-      alt="vscode"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.docker.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/docker-icon.svg"
-      alt="docker"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://eslint.org/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/eslint-icon.svg"
-      alt="eslint"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/css3-original-wordmark.svg"
-      alt="css3"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.w3.org/html/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/html5-original-wordmark.svg"
-      alt="html5"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://threejs.org/" target="_blank" style="margin-right: 12px">
-    <picture>
-      <source
-        media="(prefers-color-scheme: dark)" srcset="./assets/images/skills/threejs-dark.svg"
-      />
-      <img
-        src="./assets/images/skills/threejs-light.svg"
-        alt="three.js"
-        width="40"
-        height="40"  
-      />
-    </picture>
-    <!-- <img
-      src="./assets/images/skills/threejs.svg"
-      alt="three.js"
-      width="40"
-      height="40"
-    /> -->
-  </a>
-  <a href="https://www.typescriptlang.org/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/typescript-original.svg"
-      alt="typescript"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://nextjs.org/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/nextjs.svg"
-      alt="next.js"
-      width="70"
-      height="40"
-    />
-  </a>
-  <a href="https://reactjs.org/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/reactjs-icon.svg"
-      alt="react"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://redux.js.org/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/redux.svg"
-      alt="redux"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://react-query-v3.tanstack.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/react-query.svg"
-      alt="react query"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://iconify.design/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/iconify.svg"
-      alt="iconify"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://sass-lang.com" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/sass-original.svg"
-      alt="sass"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://tailwindcss.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/tailwindcss-icon.svg"
-      alt="tailwind"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://mui.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/mui.svg"
-      alt="mui"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://jestjs.io/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/jestjsio-icon.svg"
-      alt="jest"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.cypress.io/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/cypress-icon.svg"
-      alt="cypress"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.mongodb.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/mongodb-icon.svg"
-      alt="mongodb"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.postgresql.org/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/postgresql-icon.svg"
-      alt="postgreSQL"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.postman.com/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/getpostman-icon.svg"
-      alt="postman"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.python.org" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/python-original.svg"
-      alt="python"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.tensorflow.org/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/tensorflow-icon.svg"
-      alt="tensorflow"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://github.com/ethereum/solidity" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/solidity.svg"
-      alt="solidity"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://hardhat.org/" target="_blank" style="margin-right: 12px">
-    <img
-      src="./assets/images/skills/hardhat-icon.svg"
-      alt="hardhat"
-      width="40"
-      height="40"
-    />
-  </a>
-</p>
+<br />
+<br />
 
 ### 🍹 Statistics & Achievements
 
