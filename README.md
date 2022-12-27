@@ -4,14 +4,7 @@
 
 ## Hi there 👋
 
-<a href="https://twitter.com/0xPSheon">
-  <img align="left" alt="PSheon | Twitter" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />
-</a>
-<a href="https://www.linkedin.com/in/psheon/">
-  <img align="left" alt="PSheon | LinkedIN" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
-</a>
-
-✨ Welcome to my page, I'm Paul a passionate dapp developer and from Taiwan. my passion for software lies with dreaming up ideas and making them come true with elegant functions. I take great care in the experience, architecture, and code quality of the things I build.
+✨ I'm Paul. Frontend Architect, Web Developer, Consultant and Crypto Enthusiast from Taipei (Taiwan).
 
 ### 🌟 Projects
 
