@@ -4,6 +4,7 @@
 
 <br />
 
+![followers](https://img.shields.io/github/followers/PSheon?color=9fe9ff)
 ![views](https://komarev.com/ghpvc/?username=psheon&color=ff69b4&label=visitors)
 
 ## Hi there 👋
