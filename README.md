@@ -14,6 +14,31 @@
   </a>
 </p>
 
+### 🍹 Statistics & Achievements
+
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&count_private=true&hide=javascript,html&langs_count=4"
+    />
+    <img
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&count_private=true&hide=javascript,html&langs_count=4"
+      alt="PSheon | Most Usage Languages"
+      height="165px"
+    />
+  </picture>
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&count_private=true&show_icons=true"
+    />
+    <img
+      src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&count_private=true&show_icons=true"
+      alt="PSheon | Most Usage Languages"
+      height="165px"
+    />
+  </picture>
+</p>
+
 ### 🐧 Connect with me
 
 [<img align="left" src="./assets/images/social-media/twitter.svg" alt="PSheon | Twitter" width="32" height="32" style="padding-right:10px;" />](https://twitter.com/0xPSheon)
@@ -60,33 +85,8 @@
 <br />
 <br />
 <br />
-
----
-
-### 🍹 Statistics & Achievements
-
-<p align="center">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&count_private=true&hide=javascript,html&langs_count=4"
-    />
-    <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&count_private=true&hide=javascript,html&langs_count=4"
-      alt="PSheon | Most Usage Languages"
-      height="165px"
-    />
-  </picture>
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&count_private=true&show_icons=true"
-    />
-    <img
-      src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&count_private=true&show_icons=true"
-      alt="PSheon | Most Usage Languages"
-      height="165px"
-    />
-  </picture>
-</p>
+<br />
+<br />
 
 ---
 
