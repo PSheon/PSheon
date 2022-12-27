@@ -30,7 +30,7 @@
 
 ### Connect with me
 
-<p align="left">
+<!-- <p align="left">
   <a href="https://twitter.com/0xPSheon" target="_blank" style="margin-right: 12px">
     <img
       src="./assets/images/social-media/twitter.svg"
@@ -47,7 +47,12 @@
       height="32px"
     />
   </a>
-</p>
+</p> -->
+
+[<img align="left" src="./assets/images/social-media/twitter.svg" alt="PSheon | Twitter" width="32" height="32" style="padding-right:10px;" />](https://twitter.com/0xPSheon)
+[<img align="left" src="./assets/images/social-media/linkedin.svg" alt="PSheon | Twitter" width="32" height="32" style="padding-right:10px;" />](https://www.linkedin.com/in/psheon/)
+
+<br />
 
 ### 🔥 Languages and Skills
 
