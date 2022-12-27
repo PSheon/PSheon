@@ -12,6 +12,9 @@
   <a href="https://github.com/PSheon/Media-Gallery-Frontend" target="_blank" rel="noreferrer noopener">
     <img height="135px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true" alt="media gallery frontend" />
   </a>
+  <a href="https://stage.media.app/verse/book/1/" target="_blank" rel="noreferrer noopener">
+    <img align="right" width="135px" src="./assets/images/gallery/demo-modified.png" alt="media gallery demo" />
+  </a>
 </p>
 
 ### 🐧 Connect with me
