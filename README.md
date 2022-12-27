@@ -2,6 +2,8 @@
   <img src="./assets/images/banner.png" alt="banner" />
 </div>
 
+![views](https://komarev.com/ghpvc/?username=psheon&color=ff69b4&label=visitors)
+
 ## Hi there 👋
 
 ✨ I'm Paul. Frontend Architect, Web Developer, Consultant and Crypto Enthusiast from Taipei (Taiwan).
@@ -13,6 +15,8 @@
     <img height="135px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true" alt="media gallery frontend" />
   </a>
 </p>
+
+---
 
 ### 🍹 Statistics & Achievements
 
@@ -81,13 +85,3 @@
 [<img align="left" src="./assets/images/skills/solidity-light.svg" alt="solidity" width="32" height="32" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-light-mode-only)
 [<img align="left" src="./assets/images/skills/solidity-dark.svg" alt="solidity" width="32" height="32" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-dark-mode-only)
 [<img align="left" src="./assets/images/skills/hardhat-icon.svg" alt="hardhat" width="32" height="32" style="padding-right:10px;" />](https://hardhat.org/)
-
-<br />
-<br />
-<br />
-<br />
-<br />
-
----
-
-![views](https://komarev.com/ghpvc/?username=psheon&color=ff69b4&label=Visitors)
