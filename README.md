@@ -30,7 +30,7 @@
     <img
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html&langs_count=4"
       alt="PSheon | Most Usage Languages"
-      height="165px"
+      height="150px"
     />
   </picture>
   <picture>
@@ -40,7 +40,7 @@
     <img
       src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
       alt="PSheon | Most Usage Languages"
-      height="165px"
+      height="150px"
     />
   </picture>
 </p>
