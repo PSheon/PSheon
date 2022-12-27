@@ -14,7 +14,16 @@
 
 <p align="left">
   <a href="https://github.com/PSheon/Media-Gallery-Frontend" target="_blank" rel="noreferrer noopener">
-    <img height="135px" src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true" alt="media gallery frontend" />
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true"
+      />
+      <img
+        src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&title_color=ff6e96&icon_color=79dafa&hide_border=true"
+        alt="PSheon | Most Usage Languages"
+        height="150px"
+      />
+    </picture>
   </a>
 </p>
 
