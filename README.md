@@ -19,7 +19,7 @@
         media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true"
       />
       <img
-        src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&title_color=ff6e96&icon_color=79dafa&hide_border=true"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&title_color=ff6e96&icon_color=79dafa"
         alt="PSheon | Most Usage Languages"
         height="150px"
       />
