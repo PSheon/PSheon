@@ -66,6 +66,9 @@
 [<img align="left" src="./assets/images/skills/nextjs-light.svg" alt="next.js" width="40" height="40" style="padding-right:10px;" />](https://nextjs.org/#gh-light-mode-only)
 [<img align="left" src="./assets/images/skills/nextjs-dark.svg" alt="next.js" width="40" height="40" style="padding-right:10px;" />](https://nextjs.org/#gh-dark-mode-only)
 [<img align="left" src="./assets/images/skills/reactjs-icon.svg" alt="react" width="40" height="40" style="padding-right:10px;" />](https://reactjs.org/)
+
+---
+
 [<img align="left" src="./assets/images/skills/redux.svg" alt="redux" width="40" height="40" style="padding-right:10px;" />](https://redux.js.org/)
 [<img align="left" src="./assets/images/skills/react-query.svg" alt="react query" width="40" height="40" style="padding-right:10px;" />](https://react-query-v3.tanstack.com/)
 [<img align="left" src="./assets/images/skills/iconify-light.svg" alt="iconify" width="40" height="40" style="padding-right:10px;" />](https://iconify.design/#gh-light-mode-only)
@@ -80,13 +83,12 @@
 [<img align="left" src="./assets/images/skills/getpostman-icon.svg" alt="postman" width="40" height="40" style="padding-right:10px;" />](https://www.postman.com/)
 [<img align="left" src="./assets/images/skills/python-original.svg" alt="python" width="40" height="40" style="padding-right:10px;" />](https://www.python.org)
 [<img align="left" src="./assets/images/skills/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" style="padding-right:10px;" />](https://www.tensorflow.org/)
-[<img align="left" src="./assets/images/skills/solidity-light.svg" alt="solidity" width="40" height="40" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-light-mode-only)
-[<img align="left" src="./assets/images/skills/solidity-dark.svg" alt="solidity" width="40" height="40" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-dark-mode-only)
-[<img align="left" src="./assets/images/skills/hardhat-icon.svg" alt="hardhat" width="40" height="40" style="padding-right:10px;" />](https://hardhat.org/)
 
 ---
 
-## asd
+[<img align="left" src="./assets/images/skills/solidity-light.svg" alt="solidity" width="40" height="40" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-light-mode-only)
+[<img align="left" src="./assets/images/skills/solidity-dark.svg" alt="solidity" width="40" height="40" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-dark-mode-only)
+[<img align="left" src="./assets/images/skills/hardhat-icon.svg" alt="hardhat" width="40" height="40" style="padding-right:10px;" />](https://hardhat.org/)
 
 ---
 
