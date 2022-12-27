@@ -125,12 +125,23 @@
     />
   </a>
   <a href="https://threejs.org/" target="_blank" style="margin-right: 12px">
-    <img
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)" srcset="./assets/images/skills/threejs-dark.svg"
+      />
+      <img
+        src="./assets/images/skills/threejs-light.svg"
+        alt="three.js"
+        width="40"
+        height="40"  
+      />
+    </picture>
+    <!-- <img
       src="./assets/images/skills/threejs.svg"
       alt="three.js"
       width="40"
       height="40"
-    />
+    /> -->
   </a>
   <a href="https://www.typescriptlang.org/" target="_blank" style="margin-right: 12px">
     <img
