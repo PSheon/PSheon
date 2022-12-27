@@ -25,20 +25,20 @@
 <p align="center">
   <picture>
     <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&count_private=true&hide=javascript,html&langs_count=4"
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&hide=javascript,html&langs_count=4"
     />
     <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&count_private=true&hide=javascript,html&langs_count=4"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html&langs_count=4"
       alt="PSheon | Most Usage Languages"
       height="165px"
     />
   </picture>
   <picture>
     <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&count_private=true&show_icons=true"
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs"
     />
     <img
-      src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&count_private=true&show_icons=true"
+      src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
       alt="PSheon | Most Usage Languages"
       height="165px"
     />
