@@ -28,6 +28,27 @@
   </a>
 </p>
 
+### Connect with me
+
+<p align="left">
+  <a href="https://twitter.com/0xPSheon" target="_blank" style="margin-right: 12px">
+    <img
+      src="./assets/images/social-media/twitter.svg"
+      alt="PSheon | Twitter"
+      width="32px"
+      height="32px"
+    />
+  </a>
+  <a href="https://www.linkedin.com/in/psheon/" target="_blank" style="margin-right: 12px">
+    <img
+      src="./assets/images/social-media/linkedin.svg"
+      alt="PSheon | Twitter"
+      width="32px"
+      height="32px"
+    />
+  </a>
+</p>
+
 ### 🔥 Languages, Skills
 
 <p align="left">
