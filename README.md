@@ -37,6 +37,9 @@
     <!-- <source
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide=javascript,html,arduino&langs_count=4&hide_border=true"
     /> -->
+    <source
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4"
+    />
     <img
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4"
       alt="PSheon | Most Usage Languages"
