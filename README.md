@@ -28,16 +28,6 @@
   </a>
 </p>
 
-### 🤔 I'm learning
-
-[<img align="left" src="./assets/images/learning/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
-[<img align="left" src="./assets/images/learning/rust-dark.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-dark-mode-only)
-[<img align="left" src="./assets/images/learning/turborepo-light.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-light-mode-only)
-[<img align="left" src="./assets/images/learning/turborepo-dark.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-dark-mode-only)
-[<img align="left" src="./assets/images/learning/trpc.svg" alt="tRPC" width="32" height="32" style="padding-right:10px;" />](https://trpc.io/)
-
-<br />
-
 ---
 
 ### 🍹 Statistics & Achievements
@@ -70,6 +60,17 @@
     />
   </picture>
 </p>
+
+### 🤔 I'm learning
+
+[<img align="left" src="./assets/images/learning/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
+[<img align="left" src="./assets/images/learning/rust-dark.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-dark-mode-only)
+[<img align="left" src="./assets/images/learning/turborepo-light.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-light-mode-only)
+[<img align="left" src="./assets/images/learning/turborepo-dark.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-dark-mode-only)
+[<img align="left" src="./assets/images/learning/trpc.svg" alt="tRPC" width="32" height="32" style="padding-right:10px;" />](https://trpc.io/)
+
+<br />
+<br />
 
 ### 🐧 Connect with me
 
