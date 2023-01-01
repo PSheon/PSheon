@@ -88,6 +88,7 @@
 [<img align="left" src="./assets/images/skills/threejs-dark.svg" alt="three.js" width="32" height="32" style="padding-right:10px;" />](https://threejs.org/#gh-dark-mode-only)
 [<img align="left" src="./assets/images/skills/cpp.svg" alt="c++" width="32" height="32" style="padding-right:10px;" />](https://cplusplus.com/)
 [<img align="left" src="./assets/images/skills/typescript-original.svg" alt="typescript" width="32" height="32" style="padding-right:10px;" />](https://www.typescriptlang.org/)
+[<img align="left" src="./assets/images/skills/strapi.svg" alt="strapi" width="32" height="32" style="padding-right:10px;" />](https://strapi.io/)
 [<img align="left" src="./assets/images/skills/nextjs-light.svg" alt="next.js" width="32" height="32" style="padding-right:10px;" />](https://nextjs.org/#gh-light-mode-only)
 [<img align="left" src="./assets/images/skills/nextjs-dark.svg" alt="next.js" width="32" height="32" style="padding-right:10px;" />](https://nextjs.org/#gh-dark-mode-only)
 [<img align="left" src="./assets/images/skills/reactjs-icon.svg" alt="react" width="32" height="32" style="padding-right:10px;" />](https://reactjs.org/)
