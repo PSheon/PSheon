@@ -32,6 +32,9 @@
 
 ### 🍹 Statistics & Achievements
 
+[<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino#gh-light-mode-only" alt="test" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org)
+[<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino#gh-dark-mode-only" alt="test" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org)
+
 <p align="center">
   <picture>
     <source
