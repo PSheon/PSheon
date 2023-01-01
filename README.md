@@ -18,12 +18,12 @@
     <picture>
       <source
         media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true"
-      />
+      >
       <img
         src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&title_color=ff6e96&icon_color=79dafa"
         alt="PSheon | Media-Gallery-Frontend"
         height="150px"
-      />
+      >
     </picture>
   </a>
 </p>
@@ -36,22 +36,22 @@
   <picture>
     <source
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino"
-    />
+    >
     <img
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4"
       alt="PSheon | Most Usage Languages"
       height="150px"
-    />
+    >
   </picture>
   <picture>
     <source
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs"
-    />
+    >
     <img
       src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
       alt="PSheon | Most Usage Languages"
       height="150px"
-    />
+    >
   </picture>
 </p>
 
