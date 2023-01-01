@@ -18,12 +18,12 @@
     <picture>
       <source
         media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true"
-      />
+      >
       <img
         src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&title_color=ff6e96&icon_color=79dafa"
-        alt="PSheon | Most Usage Languages"
+        alt="PSheon | Media-Gallery-Frontend"
         height="150px"
-      />
+      >
     </picture>
   </a>
 </p>
@@ -36,30 +36,35 @@
   <picture>
     <source
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino"
-    />
-    <source
-      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4"
-    />
+    >
     <img
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4"
       alt="PSheon | Most Usage Languages"
       height="150px"
-    />
+    >
   </picture>
   <picture>
     <source
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs"
-    />
-    <source
-      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
-    />
+    >
     <img
       src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
       alt="PSheon | Most Usage Languages"
       height="150px"
-    />
+    >
   </picture>
 </p>
+
+### 🤔 I'm learning
+
+[<img align="left" src="./assets/images/learning/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
+[<img align="left" src="./assets/images/learning/rust-dark.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-dark-mode-only)
+[<img align="left" src="./assets/images/learning/turborepo-light.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-light-mode-only)
+[<img align="left" src="./assets/images/learning/turborepo-dark.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-dark-mode-only)
+[<img align="left" src="./assets/images/learning/trpc.svg" alt="tRPC" width="32" height="32" style="padding-right:10px;" />](https://trpc.io/)
+
+<br />
+<br />
 
 ### 🐧 Connect with me
 
@@ -75,6 +80,9 @@
 [<img align="left" src="./assets/images/skills/microsoft_azure-icon.svg" alt="azure" width="32" height="32" style="padding-right:10px;" />](https://azure.microsoft.com/)
 [<img align="left" src="./assets/images/skills/ubuntu-icon.svg" alt="ubuntu" width="32" height="32" style="padding-right:10px;" />](https://ubuntu.com/)
 [<img align="left" src="./assets/images/skills/brave.svg" alt="brave" width="32" height="32" style="padding-right:10px;" />](https://brave.com/)
+[<img align="left" src="./assets/images/skills/figma-icon.svg" alt="figma" width="32" height="32" style="padding-right:10px;" />](https://www.figma.com/)
+[<img align="left" src="./assets/images/skills/blender.svg" alt="blender" width="32" height="32" style="padding-right:10px;" />](https://www.blender.org/)
+[<img align="left" src="./assets/images/skills/notion.svg" alt="notion" width="32" height="32" style="padding-right:10px;" />](https://www.notion.so/)
 [<img align="left" src="./assets/images/skills/git-scm-icon.svg" alt="git" width="32" height="32" style="padding-right:10px;" />](https://git-scm.com/)
 [<img align="left" src="./assets/images/skills/github-actions.svg" alt="github actions" width="32" height="32" style="padding-right:10px;" />](https://github.com/features/actions)
 [<img align="left" src="./assets/images/skills/file_type_vscode.svg" alt="vscode" width="32" height="32" style="padding-right:10px;" />](https://code.visualstudio.com/)
@@ -88,6 +96,8 @@
 [<img align="left" src="./assets/images/skills/threejs-dark.svg" alt="three.js" width="32" height="32" style="padding-right:10px;" />](https://threejs.org/#gh-dark-mode-only)
 [<img align="left" src="./assets/images/skills/cpp.svg" alt="c++" width="32" height="32" style="padding-right:10px;" />](https://cplusplus.com/)
 [<img align="left" src="./assets/images/skills/typescript-original.svg" alt="typescript" width="32" height="32" style="padding-right:10px;" />](https://www.typescriptlang.org/)
+[<img align="left" src="./assets/images/skills/nginx-icon.svg" alt="nginx" width="32" height="32" style="padding-right:10px;" />](https://www.nginx.com/)
+[<img align="left" src="./assets/images/skills/strapi.svg" alt="strapi" width="32" height="32" style="padding-right:10px;" />](https://strapi.io/)
 [<img align="left" src="./assets/images/skills/nextjs-light.svg" alt="next.js" width="32" height="32" style="padding-right:10px;" />](https://nextjs.org/#gh-light-mode-only)
 [<img align="left" src="./assets/images/skills/nextjs-dark.svg" alt="next.js" width="32" height="32" style="padding-right:10px;" />](https://nextjs.org/#gh-dark-mode-only)
 [<img align="left" src="./assets/images/skills/reactjs-icon.svg" alt="react" width="32" height="32" style="padding-right:10px;" />](https://reactjs.org/)
@@ -100,6 +110,7 @@
 [<img align="left" src="./assets/images/skills/mui.svg" alt="mui" width="32" height="32" style="padding-right:10px;" />](https://mui.com/)
 [<img align="left" src="./assets/images/skills/jestjsio-icon.svg" alt="jest" width="32" height="32" style="padding-right:10px;" />](https://jestjs.io/)
 [<img align="left" src="./assets/images/skills/cypress-icon.svg" alt="cypress" width="32" height="32" style="padding-right:10px;" />](https://www.cypress.io/)
+[<img align="left" src="./assets/images/skills/redis-icon.svg" alt="redis" width="32" height="32" style="padding-right:10px;" />](https://redis.io/)
 [<img align="left" src="./assets/images/skills/mongodb-icon.svg" alt="mongodb" width="32" height="32" style="padding-right:10px;" />](https://www.mongodb.com/)
 [<img align="left" src="./assets/images/skills/postgresql-icon.svg" alt="postgreSQL" width="32" height="32" style="padding-right:10px;" />](https://www.postgresql.org/)
 [<img align="left" src="./assets/images/skills/getpostman-icon.svg" alt="postman" width="32" height="32" style="padding-right:10px;" />](https://www.postman.com/)
