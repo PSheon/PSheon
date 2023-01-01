@@ -21,7 +21,7 @@
       />
       <img
         src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&title_color=ff6e96&icon_color=79dafa"
-        alt="PSheon | Most Usage Languages"
+        alt="PSheon | Media-Gallery-Frontend"
         height="150px"
       />
     </picture>
