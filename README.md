@@ -55,6 +55,23 @@
   </picture>
 </p>
 
+<br />
+
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=282a36&color=f8f8f2&line=ff6e96&point=79dafa&area=true&hide_border=true"
+    >
+    <img
+      src="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true"
+      alt="PSheon | Activity Graph"
+      height="200px"
+    >
+  </picture>
+</p>
+
+<br />
+
 ### 🤔 I'm learning
 
 [<img align="left" src="./assets/images/learning/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
