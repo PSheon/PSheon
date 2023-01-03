@@ -65,7 +65,7 @@
     <img
       src="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true"
       alt="PSheon | Activity Graph"
-      height="150px"
+      height="200px"
     >
   </picture>
 </p>
