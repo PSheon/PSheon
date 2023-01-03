@@ -32,7 +32,7 @@
 
 ### 🍹 Statistics & Achievements
 
-<p align="center">
+<!-- <p align="center">
   <picture>
     <source
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino"
@@ -49,11 +49,16 @@
     >
     <img
       src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
-      alt="PSheon | Most Usage Languages"
+      alt="PSheon | Github Stats"
       height="150px"
     >
   </picture>
-</p>
+</p> -->
+
+[<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4?" alt="test" height="150" />](https://www.rust-lang.org/#gh-light-mode-only)
+[<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino?" alt="test" height="150" />](https://www.rust-lang.org/#gh-dark-mode-only)
+[<img src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs?" alt="PSheon | Github Stats"  height="150" />](https://www.rust-lang.org/#gh-light-mode-only)
+[<img src="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs" alt="PSheon | Github Stats" height="150" />](https://www.rust-lang.org/#gh-dark-mode-only)
 
 <br />
 
@@ -69,11 +74,6 @@
     >
   </picture>
 </p>
-
-[<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4?" alt="test" height="150" />](https://www.rust-lang.org/#gh-light-mode-only)
-[<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino?" alt="test" height="150" />](https://www.rust-lang.org/#gh-dark-mode-only)
-[<img src="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true?" alt="test" height="150" />](https://www.rust-lang.org/#gh-light-mode-only)
-[<img src="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=282a36&color=f8f8f2&line=ff6e96&point=79dafa&area=true&hide_border=true?" alt="test" height="150" />](https://www.rust-lang.org/#gh-dark-mode-only)
 
 <br />
 
