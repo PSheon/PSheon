@@ -55,10 +55,10 @@
   </picture>
 </p> -->
 
-[<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4?" alt="test" height="150" />](https://www.rust-lang.org/#gh-light-mode-only)
-[<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino?" alt="test" height="150" />](https://www.rust-lang.org/#gh-dark-mode-only)
-[<img src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs?" alt="PSheon | Github Stats"  height="150" />](https://www.rust-lang.org/#gh-light-mode-only)
-[<img src="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs" alt="PSheon | Github Stats" height="150" />](https://www.rust-lang.org/#gh-dark-mode-only)
+[<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,Arduino&langs_count=4?" alt="PSheon | Most Usage Languages" height="150" />](https://github.com/PSheon/PSheon/#gh-light-mode-only)
+[<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,Arduino?" alt="PSheon | Most Usage Languages" height="150" />](https://github.com/PSheon/PSheon/#gh-dark-mode-only)
+[<img align="center" src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs?" alt="PSheon | Github Stats"  height="150" />](https://github.com/PSheon/#gh-light-mode-only)
+[<img align="center" src="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs?" alt="PSheon | Github Stats" height="150" />](https://github.com/PSheon/#gh-dark-mode-only)
 
 <br />
 
