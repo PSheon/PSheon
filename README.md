@@ -32,7 +32,7 @@
 
 ### 🍹 Statistics & Achievements
 
-<!-- <p align="center">
+<p align="center">
   <picture>
     <source
       media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino"
@@ -53,7 +53,9 @@
       height="150px"
     >
   </picture>
-</p> -->
+</p>
+
+<br />
 
 [<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,Arduino&langs_count=4?" alt="PSheon | Most Usage Languages" height="150" />](https://github.com/PSheon/PSheon/#gh-light-mode-only)
 [<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,Arduino?" alt="PSheon | Most Usage Languages" height="150" />](https://github.com/PSheon/PSheon/#gh-dark-mode-only)
