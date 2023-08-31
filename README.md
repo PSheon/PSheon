@@ -72,6 +72,14 @@
 
 <br />
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
+
+<br />
+
 ### 🤔 I'm learning
 
 [<img align="left" src="./assets/images/learning/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
