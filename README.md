@@ -69,15 +69,6 @@
     >
   </picture>
 </p>
-
-<br />
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PSheon/PSheon/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PSheon/PSheon/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/PSheon/PSheon/output/github-contribution-grid-snake.svg" />
-</picture>
-
 <br />
 
 ### 🤔 I'm learning
@@ -88,7 +79,6 @@
 [<img align="left" src="./assets/images/learning/turborepo-dark.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-dark-mode-only)
 [<img align="left" src="./assets/images/learning/trpc.svg" alt="tRPC" width="32" height="32" style="padding-right:10px;" />](https://trpc.io/)
 
-<br />
 <br />
 
 ### 🐧 Connect with me
