@@ -35,10 +35,10 @@
 <p align="center">
   <picture>
     <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,arduino"
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,Arduino"
     >
     <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,arduino&langs_count=4"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,Arduino&langs_count=4"
       alt="PSheon | Most Usage Languages"
       height="150px"
     >
@@ -49,7 +49,7 @@
     >
     <img
       src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
-      alt="PSheon | Most Usage Languages"
+      alt="PSheon | Github Stats"
       height="150px"
     >
   </picture>
@@ -60,16 +60,15 @@
 <p align="center">
   <picture>
     <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=282a36&color=f8f8f2&line=ff6e96&point=79dafa&area=true&hide_border=true"
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=psheon&bg_color=282a36&color=f8f8f2&line=ff6e96&point=79dafa&area=true&hide_border=true"
     >
     <img
-      src="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true"
+      src="https://github-readme-activity-graph.vercel.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true"
       alt="PSheon | Activity Graph"
       height="200px"
     >
   </picture>
 </p>
-
 <br />
 
 ### 🤔 I'm learning
@@ -80,7 +79,6 @@
 [<img align="left" src="./assets/images/learning/turborepo-dark.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-dark-mode-only)
 [<img align="left" src="./assets/images/learning/trpc.svg" alt="tRPC" width="32" height="32" style="padding-right:10px;" />](https://trpc.io/)
 
-<br />
 <br />
 
 ### 🐧 Connect with me
