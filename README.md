@@ -60,10 +60,10 @@
 <p align="center">
   <picture>
     <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=282a36&color=f8f8f2&line=ff6e96&point=79dafa&area=true&hide_border=true"
+      media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=psheon&bg_color=282a36&color=f8f8f2&line=ff6e96&point=79dafa&area=true&hide_border=true"
     >
     <img
-      src="https://github-readme-activity-graph.cyclic.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true"
+      src="https://github-readme-activity-graph.vercel.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true"
       alt="PSheon | Activity Graph"
       height="200px"
     >
