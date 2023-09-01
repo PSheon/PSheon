@@ -1,9 +1,3 @@
-<style>
-  table#example-table td {
-    border: none;
-  }
-</style>
-
 <div style="width:100%">
   <img src="./assets/images/welcome-banner.png" alt="banner" />
 </div>
@@ -75,34 +69,6 @@
 ---
 
 ### 🍹 Statistics & Achievements
-
-<table id="example-table">
-  <tr>
-    <td style="border:0px;">
-      <picture>
-        <source
-          media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,Arduino"
-        >
-        <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,Arduino&langs_count=4"
-          alt="PSheon | Most Usage Languages"
-        >
-      </picture>
-    </td>
-    <td style="border:0px;">
-      <picture>
-        <source
-          media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs"
-        >
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
-          alt="PSheon | Github Stats"
-          height="150px"
-        >
-      </picture>
-    </td>
-  </tr>
-</table>
 
 <p align="center">
   <picture>
