@@ -2,6 +2,44 @@
   <img src="./assets/images/welcome-banner.png" alt="banner" />
 </div>
 
+<p align="center">
+  <picture>
+    <img
+      src="./assets/images/energy-ball.gif"
+      alt="energy ball"
+      style="padding-right:6px; max-height: 64px;"
+    >
+  </picture>
+  <picture>
+    <img
+      src="./assets/images/energy-ball.gif"
+      alt="energy ball"
+      style="padding-right:6px; max-height: 64px;"
+    >
+  </picture>
+  <picture>
+    <img
+      src="./assets/images/energy-ball.gif"
+      alt="energy ball"
+      style="padding-right:6px; max-height: 64px;"
+    >
+  </picture>
+  <picture>
+    <img
+      src="./assets/images/energy-ball.gif"
+      alt="energy ball"
+      style="padding-right:6px; max-height: 64px;"
+    >
+  </picture>
+  <picture>
+    <img
+      src="./assets/images/energy-ball.gif"
+      alt="energy ball"
+      style="padding-right:6px; max-height: 64px;"
+    >
+  </picture>
+</p>
+
 <br />
 
 ![followers](https://img.shields.io/github/followers/PSheon?color=9fe9ff)
@@ -69,12 +107,6 @@
     >
   </picture>
 </p>
-
-<div style="width:100%">
-  <p align="center">
-    <img src="./assets/images/synthwave-road.gif" alt="synthwave" height="300px" />
-  </p>
-</div>
 
 ### 🤔 I'm learning
 
