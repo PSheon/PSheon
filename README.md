@@ -32,6 +32,12 @@
 
 ### 🍹 Statistics & Achievements
 
+<div style="width:100%">
+  <p align="center">
+    <img src="./assets/images/synthwave-road.gif" alt="synthwave" height="300px" />
+  </p>
+</div>
+
 <p align="center">
   <picture>
     <source
