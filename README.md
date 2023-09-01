@@ -26,6 +26,14 @@
       >
     </picture>
   </a>
+  <picture>
+    <img
+      align="right"
+      src="./assets/images/synthwave-road.gif"
+      alt="synthwave"
+      height="150px"
+    >
+  </picture>
 </p>
 
 ---
