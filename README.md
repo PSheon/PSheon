@@ -14,6 +14,14 @@
 ### 🌟 I'm currently working on
 
 <p align="left">
+  <picture>
+    <img
+      align="right"
+      src="./assets/images/energy-ball.gif"
+      alt="energy ball"
+      height="150px"
+    >
+  </picture>
   <a href="https://github.com/PSheon/Media-Gallery-Frontend" target="_blank" rel="noreferrer noopener">
     <picture>
       <source
@@ -26,13 +34,6 @@
       >
     </picture>
   </a>
-  <picture>
-    <img
-      src="./assets/images/energy-ball.gif"
-      alt="energy ball"
-      height="150px"
-    >
-  </picture>
 </p>
 
 ---
