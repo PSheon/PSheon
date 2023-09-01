@@ -40,12 +40,6 @@
 
 ### 🍹 Statistics & Achievements
 
-<div style="width:100%">
-  <p align="center">
-    <img src="./assets/images/synthwave-road.gif" alt="synthwave" height="300px" />
-  </p>
-</div>
-
 <p align="center">
   <picture>
     <source
@@ -83,11 +77,12 @@
     >
   </picture>
 </p>
-<br />
 
-<p align="center">
-  <img src="./assets/images/energy-ball.gif" alt="energy ball" height="200px" />
-</p>
+<div style="width:100%">
+  <p align="center">
+    <img src="./assets/images/synthwave-road.gif" alt="synthwave" height="300px" />
+  </p>
+</div>
 
 ### 🤔 I'm learning
 
