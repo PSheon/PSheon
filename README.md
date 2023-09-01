@@ -71,6 +71,10 @@
 </p>
 <br />
 
+<p align="center">
+  <img src="./assets/images/energy-ball.gif" alt="energy ball" height="200px" />
+</p>
+
 ### 🤔 I'm learning
 
 [<img align="left" src="./assets/images/learning/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
