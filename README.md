@@ -1,3 +1,9 @@
+<style>
+  table td {
+    border: none !important;
+  }
+</style>
+
 <div style="width:100%">
   <img src="./assets/images/welcome-banner.png" alt="banner" />
 </div>
