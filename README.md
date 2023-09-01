@@ -1,6 +1,6 @@
 <style>
-  table td {
-    border: none !important;
+  table#example-table td {
+    border: none;
   }
 </style>
 
@@ -76,7 +76,7 @@
 
 ### 🍹 Statistics & Achievements
 
-<table>
+<table id="example-table">
   <tr>
     <td style="border:0px;">
       <picture>
