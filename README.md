@@ -7,35 +7,35 @@
     <img
       src="./assets/images/energy-ball.gif"
       alt="energy ball"
-      style="padding-right:6px; max-height: 64px;"
+      width="48px" height="48px" style="padding-right:6px;"
     >
   </picture>
   <picture>
     <img
       src="./assets/images/energy-ball.gif"
       alt="energy ball"
-      style="padding-right:6px; max-height: 64px;"
+      width="48px" height="48px" style="padding-right:6px;"
     >
   </picture>
   <picture>
     <img
       src="./assets/images/energy-ball.gif"
       alt="energy ball"
-      style="padding-right:6px; max-height: 64px;"
+      width="48px" height="48px" style="padding-right:6px;"
     >
   </picture>
   <picture>
     <img
       src="./assets/images/energy-ball.gif"
       alt="energy ball"
-      style="padding-right:6px; max-height: 64px;"
+      width="48px" height="48px" style="padding-right:6px;"
     >
   </picture>
   <picture>
     <img
       src="./assets/images/energy-ball.gif"
       alt="energy ball"
-      style="padding-right:6px; max-height: 64px;"
+      width="48px" height="48px" style="padding-right:6px;"
     >
   </picture>
 </p>
