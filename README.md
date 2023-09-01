@@ -28,10 +28,9 @@
   </a>
   <picture>
     <img
-      align="right"
-      src="./assets/images/synthwave-road.gif"
-      alt="synthwave"
-      height="150px"
+      src="./assets/images/energy-ball.gif"
+      alt="energy ball"
+      width="250px"
     >
   </picture>
 </p>
