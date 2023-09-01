@@ -30,7 +30,7 @@
     <img
       src="./assets/images/energy-ball.gif"
       alt="energy ball"
-      width="250px"
+      height="150px"
     >
   </picture>
 </p>
