@@ -47,22 +47,16 @@
 
 ## Hi there 👋
 
-✨ I'm Paul. Frontend Architect, Web Developer, Consultant and Crypto Enthusiast from Taipei (Taiwan).
+✨ I'm Paul. Frontend Architect, Web Developer, Consultant and Crypto Enthusiast.
 
 ### 🌟 I'm currently working on
 
-<p align="left">
-  <a href="https://github.com/PSheon/Media-Gallery-Frontend" target="_blank" rel="noreferrer noopener">
-    <picture>
-      <source
-        media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&theme=dracula&hide_border=true"
-      >
-      <img
-        src="https://github-readme-stats.vercel.app/api/pin/?username=PSheon&repo=Media-Gallery-Frontend&title_color=ff6e96&icon_color=79dafa"
-        alt="PSheon | Media-Gallery-Frontend"
-        height="150px"
-      >
-    </picture>
+<p align="center">
+  <a href="https://app.buxx.finance/project/list/" target="_blank">
+    <img src="https://img.shields.io/badge/Buxx%20Finance-0A0A23?style=for-the-badge&logo=ethereum&logoColor=79dafa" />
+  </a>
+  <a href="https://analysis-bot-stage.buxx.finance/strategy/dashboard/" target="_blank">
+    <img src="https://img.shields.io/badge/Trading%20Analysis%20Bot-ff6e96?style=for-the-badge&logo=googlegemini&logoColor=79dafa" />
   </a>
 </p>
 
@@ -93,8 +87,6 @@
   </picture>
 </p>
 
-<br />
-
 <p align="center">
   <picture>
     <source
@@ -110,11 +102,7 @@
 
 ### 🤔 I'm learning
 
-[<img align="left" src="./assets/images/learning/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
-[<img align="left" src="./assets/images/learning/rust-dark.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-dark-mode-only)
-[<img align="left" src="./assets/images/learning/turborepo-light.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-light-mode-only)
-[<img align="left" src="./assets/images/learning/turborepo-dark.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-dark-mode-only)
-[<img align="left" src="./assets/images/learning/trpc.svg" alt="tRPC" width="32" height="32" style="padding-right:10px;" />](https://trpc.io/)
+[<img align="left" src="./assets/images/learning/langgraph.svg" alt="langgraph" width="32" height="32" style="padding-right:10px;" />](https://www.langchain.com/langgraph/)
 
 <br />
 
@@ -174,3 +162,8 @@
 [<img align="left" src="./assets/images/skills/solidity-light.svg" alt="solidity" width="32" height="32" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-light-mode-only)
 [<img align="left" src="./assets/images/skills/solidity-dark.svg" alt="solidity" width="32" height="32" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-dark-mode-only)
 [<img align="left" src="./assets/images/skills/hardhat-icon.svg" alt="hardhat" width="32" height="32" style="padding-right:10px;" />](https://hardhat.org/)
+[<img align="left" src="./assets/images/skills/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
+[<img align="left" src="./assets/images/skills/rust-dark.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-dark-mode-only)
+[<img align="left" src="./assets/images/skills/turborepo-light.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-light-mode-only)
+[<img align="left" src="./assets/images/skills/turborepo-dark.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-dark-mode-only)
+[<img align="left" src="./assets/images/learning/trpc.svg" alt="tRPC" width="32" height="32" style="padding-right:10px;" />](https://trpc.io/)
