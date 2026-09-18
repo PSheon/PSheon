@@ -32,7 +32,7 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
 ### [HydraNet](https://github.com/Syncrobotic/SyncAI-Lib-HydraNet) — one camera, one model, everything in metres
 
 <a href="https://github.com/Syncrobotic/SyncAI-Lib-HydraNet">
-  <img src="https://raw.githubusercontent.com/Syncrobotic/SyncAI-Lib-HydraNet/main/assets/demo_Kaohsiung-cam04.gif" alt="HydraNet demo: detections and tracks on the left, the metric 3D scene with live dwell field on the right" width="100%" />
+  <img src="./assets/images/hydranet-demo.webp" alt="HydraNet demo: detections and tracks on the left, the metric 3D scene with live dwell field on the right" width="100%" />
 </a>
 
 <p align="center"><sub>Left: detections and tracks with a staff / customer verdict. Right: the same moment in metres, with the live dwell field on the floor.</sub></p>
