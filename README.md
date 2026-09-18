@@ -84,13 +84,6 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/images/contributions-dark.svg" />
-    <img src="./assets/images/contributions-light.svg" alt="PSheon | Contributions in the last 12 months, weekly" width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=dracula" />
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=default" alt="PSheon | GitHub Stats" height="160px" />
   </picture>
@@ -98,6 +91,13 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=psheon&theme=dracula&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=79dafa" />
     <img src="https://streak-stats.demolab.com/?user=psheon&theme=default&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=ff6e96" alt="PSheon | Streak" height="160px" />
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/images/contributions-dark.svg" />
+    <img src="./assets/images/contributions-light.svg" alt="PSheon | Contributions in the last 12 months, weekly" width="690px" />
   </picture>
 </p>
 
