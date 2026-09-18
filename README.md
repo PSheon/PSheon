@@ -35,7 +35,7 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
   <img src="https://raw.githubusercontent.com/Syncrobotic/SyncAI-Lib-HydraNet/main/assets/demo_Kaohsiung-cam04.gif" alt="HydraNet demo: detections and tracks on the left, the metric 3D scene with live dwell field on the right" width="100%" />
 </a>
 
-<sub>Left: person boxes and confirmed tracks, staff / customer verdict per person. Right: the same moment in metres, the store's fixtures reconstructed from one static plate, amber floor tiles are the live dwell field. Every face is blurred by the pipeline itself.</sub>
+<p align="center"><sub>Left: detections and tracks with a staff / customer verdict. Right: the same moment in metres, with the live dwell field on the floor.</sub></p>
 
 - **One ~8M-parameter network, one forward pass.** A shared RegNetX-800MF + BiFPN trunk carrying detection (`person`, `bag`, `device`, `boxed_stock`), pose (17 keypoints decoded inside the boxes) and terrain segmentation (`floor`, `wall`, `column`, `fixture`, `person`).
 - **Teachers once, student every frame.** SAM 3, Grounding DINO, Depth-Anything V2 and ViTPose run once per camera to label and to fit the scene geometry. Anything constant on a fixed camera is cached, never learned. Only what changes frame to frame spends the GPU.
@@ -71,41 +71,12 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
 
 ## 🧰 Stack
 
-**Vision**
-
-<p>
-  <img src="https://img.shields.io/badge/PyTorch-0A0A23?style=for-the-badge&logo=pytorch&logoColor=79dafa" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/ONNX-0A0A23?style=for-the-badge&logo=onnx&logoColor=79dafa" alt="ONNX" />
-  <img src="https://img.shields.io/badge/TensorRT%20%C2%B7%20Jetson-0A0A23?style=for-the-badge&logo=nvidia&logoColor=79dafa" alt="TensorRT / Jetson" />
-  <img src="https://img.shields.io/badge/OpenCV-0A0A23?style=for-the-badge&logo=opencv&logoColor=79dafa" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-0A0A23?style=for-the-badge&logo=huggingface&logoColor=79dafa" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/Python-0A0A23?style=for-the-badge&logo=python&logoColor=79dafa" alt="Python" />
-</p>
-
-**LLM / Agents**
-
-<p>
-  <img src="https://img.shields.io/badge/Claude-0A0A23?style=for-the-badge&logo=claude&logoColor=ff6e96" alt="Claude" />
-  <img src="https://img.shields.io/badge/Gemini-0A0A23?style=for-the-badge&logo=googlegemini&logoColor=ff6e96" alt="Gemini" />
-  <img src="https://img.shields.io/badge/Ollama-0A0A23?style=for-the-badge&logo=ollama&logoColor=ff6e96" alt="Ollama" />
-  <img src="https://img.shields.io/badge/LangGraph-0A0A23?style=for-the-badge&logo=langgraph&logoColor=ff6e96" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/MCP-0A0A23?style=for-the-badge&logo=modelcontextprotocol&logoColor=ff6e96" alt="MCP" />
-</p>
-
-**Edge / Infra**
-
-<p>
-  <img src="https://img.shields.io/badge/ROS-0A0A23?style=for-the-badge&logo=ros&logoColor=b9a5ff" alt="ROS" />
-  <img src="https://img.shields.io/badge/GStreamer-0A0A23?style=for-the-badge&logo=gstreamer&logoColor=b9a5ff" alt="GStreamer" />
-  <img src="https://img.shields.io/badge/WebRTC-0A0A23?style=for-the-badge&logo=webrtc&logoColor=b9a5ff" alt="WebRTC" />
-  <img src="https://img.shields.io/badge/Kotlin%20Multiplatform-0A0A23?style=for-the-badge&logo=kotlin&logoColor=b9a5ff" alt="Kotlin Multiplatform" />
-  <img src="https://img.shields.io/badge/Rust-0A0A23?style=for-the-badge&logo=rust&logoColor=b9a5ff" alt="Rust" />
-  <img src="https://img.shields.io/badge/Solidity-0A0A23?style=for-the-badge&logo=solidity&logoColor=b9a5ff" alt="Solidity" />
-  <img src="https://img.shields.io/badge/Docker-0A0A23?style=for-the-badge&logo=docker&logoColor=b9a5ff" alt="Docker" />
-  <img src="https://img.shields.io/badge/PostgreSQL-0A0A23?style=for-the-badge&logo=postgresql&logoColor=b9a5ff" alt="PostgreSQL" />
-</p>
-
-<sub>Also: TypeScript · React · Next.js. Ten years of frontend architecture is what the dashboards are built on.</sub>
+<table>
+  <tr><td><b>Vision</b></td><td><img src="https://img.shields.io/badge/PyTorch-0A0A23?style=flat-square&logo=pytorch&logoColor=79dafa" alt="PyTorch" /> <img src="https://img.shields.io/badge/ONNX-0A0A23?style=flat-square&logo=onnx&logoColor=79dafa" alt="ONNX" /> <img src="https://img.shields.io/badge/TensorRT%20%C2%B7%20Jetson-0A0A23?style=flat-square&logo=nvidia&logoColor=79dafa" alt="TensorRT %C2%B7 Jetson" /> <img src="https://img.shields.io/badge/OpenCV-0A0A23?style=flat-square&logo=opencv&logoColor=79dafa" alt="OpenCV" /> <img src="https://img.shields.io/badge/Hugging%20Face-0A0A23?style=flat-square&logo=huggingface&logoColor=79dafa" alt="Hugging Face" /> <img src="https://img.shields.io/badge/Python-0A0A23?style=flat-square&logo=python&logoColor=79dafa" alt="Python" /></td></tr>
+  <tr><td><b>LLM / Agents</b></td><td><img src="https://img.shields.io/badge/Claude-0A0A23?style=flat-square&logo=claude&logoColor=ff6e96" alt="Claude" /> <img src="https://img.shields.io/badge/Gemini-0A0A23?style=flat-square&logo=googlegemini&logoColor=ff6e96" alt="Gemini" /> <img src="https://img.shields.io/badge/Ollama-0A0A23?style=flat-square&logo=ollama&logoColor=ff6e96" alt="Ollama" /> <img src="https://img.shields.io/badge/LangGraph-0A0A23?style=flat-square&logo=langgraph&logoColor=ff6e96" alt="LangGraph" /> <img src="https://img.shields.io/badge/MCP-0A0A23?style=flat-square&logo=modelcontextprotocol&logoColor=ff6e96" alt="MCP" /></td></tr>
+  <tr><td><b>Edge / Infra</b></td><td><img src="https://img.shields.io/badge/ROS-0A0A23?style=flat-square&logo=ros&logoColor=b9a5ff" alt="ROS" /> <img src="https://img.shields.io/badge/GStreamer-0A0A23?style=flat-square&logo=gstreamer&logoColor=b9a5ff" alt="GStreamer" /> <img src="https://img.shields.io/badge/WebRTC-0A0A23?style=flat-square&logo=webrtc&logoColor=b9a5ff" alt="WebRTC" /> <img src="https://img.shields.io/badge/Kotlin%20Multiplatform-0A0A23?style=flat-square&logo=kotlin&logoColor=b9a5ff" alt="Kotlin Multiplatform" /> <img src="https://img.shields.io/badge/Rust-0A0A23?style=flat-square&logo=rust&logoColor=b9a5ff" alt="Rust" /> <img src="https://img.shields.io/badge/Solidity-0A0A23?style=flat-square&logo=solidity&logoColor=b9a5ff" alt="Solidity" /> <img src="https://img.shields.io/badge/Docker-0A0A23?style=flat-square&logo=docker&logoColor=b9a5ff" alt="Docker" /> <img src="https://img.shields.io/badge/PostgreSQL-0A0A23?style=flat-square&logo=postgresql&logoColor=b9a5ff" alt="PostgreSQL" /></td></tr>
+  <tr><td><b>Also</b></td><td><img src="https://img.shields.io/badge/TypeScript-0A0A23?style=flat-square&logo=typescript&logoColor=8b949e" alt="TypeScript" /> <img src="https://img.shields.io/badge/React-0A0A23?style=flat-square&logo=react&logoColor=8b949e" alt="React" /> <img src="https://img.shields.io/badge/Next.js-0A0A23?style=flat-square&logo=nextdotjs&logoColor=8b949e" alt="Next.js" /></td></tr>
+</table>
 
 <img src="./assets/images/divider.svg" alt="" width="100%" />
 
@@ -113,19 +84,13 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=psheon&theme=dracula" />
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=psheon&theme=default" alt="PSheon | Profile details and contributions" width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=dracula" />
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=default" alt="PSheon | GitHub Stats" height="180px" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=default" alt="PSheon | GitHub Stats" height="160px" />
   </picture>
+  &nbsp;
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=psheon&theme=dracula&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=79dafa" />
-    <img src="https://streak-stats.demolab.com/?user=psheon&theme=default&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=ff6e96" alt="PSheon | Streak" height="180px" />
+    <img src="https://streak-stats.demolab.com/?user=psheon&theme=default&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=ff6e96" alt="PSheon | Streak" height="160px" />
   </picture>
 </p>
 
