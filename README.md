@@ -83,7 +83,10 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
 ## 📈 Stats
 
 <p align="center">
-  <a href="https://github.com/PSheon"><img src="https://ghchart.rshah.org/ff6e96/psheon" alt="PSheon | Contributions in the last year" width="100%" /></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/images/contributions-dark.svg" />
+    <img src="./assets/images/contributions-light.svg" alt="PSheon | Contributions in the last 12 months, weekly" width="100%" />
+  </picture>
 </p>
 
 <p align="center">
