@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  html, body { margin: 0; padding: 0; background: #07081a; }
+  body { width: 2400px; height: 800px; overflow: hidden; position: relative; }
+  canvas { position: absolute; inset: 0; }
+  .text {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-family: "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #eef2ff; text-align: center;
+  }
+  .eyebrow {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 26px; letter-spacing: 0.42em; color: #79dafa; opacity: 0.85; margin-bottom: 26px;
+  }
+  .headline-wrap { position: relative; height: 176px; }
+  .headline, .headline-glow {
+    font-size: 176px; font-weight: 900; line-height: 1; white-space: nowrap; letter-spacing: 0.06em;
+  }
+  .headline {
+    position: relative;
+    background: linear-gradient(90deg, #79dafa 0%, #b9a5ff 55%, #ff6e96 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .headline-glow { position: absolute; inset: 0; color: #9fb0ff; opacity: 0.5; filter: blur(38px); }
+  .sub {
+    margin-top: 30px; font-size: 40px; font-weight: 500; color: #d6dcff; letter-spacing: 0.08em;
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+  .sub .dot { color: #ff6e96; padding: 0 14px; }
+  .term {
+    position: absolute; left: 0; right: 0; bottom: 44px; text-align: center;
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 24px; color: #8d97c4; letter-spacing: 0.02em;
+  }
+  .term .p { color: #79dafa; }
+  .term .ok { color: #7fe3a1; }
+  .term .cur { color: #ff6e96; }
+</style>
+</head>
+<body>
+<canvas id="c" width="2400" height="800"></canvas>
+<div class="text">
+  <div class="eyebrow">// BUILDING WITH LARGE LANGUAGE MODELS</div>
+  <div class="headline-wrap"><div class="headline-glow">AI ENGINEER</div><div class="headline">AI ENGINEER</div></div>
+  <div class="sub">LLM AGENTS<span class="dot">·</span>RAG<span class="dot">·</span>TOOL CALLING<span class="dot">·</span>EVALS</div>
+</div>
+<div class="term"><span class="p">$</span> agent.run("analyze market") <span class="ok">✓</span> 3 tool calls · 1.2s <span class="cur">▍</span></div>
+<script>
+  // Deterministic PRNG so the banner is reproducible
+  let seed = 20260918;
+  const rnd = () => { seed = (seed * 1664525 + 1013904223) % 4294967296; return seed / 4294967296; };
+
+  const W = 2400, H = 800;
+  const ctx = document.getElementById('c').getContext('2d');
+
+  // Background
+  const bg = ctx.createLinearGradient(0, 0, W, H);
+  bg.addColorStop(0, '#07081a'); bg.addColorStop(1, '#0c0a26');
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+
+  const glow = (x, y, r, color) => {
+    const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0, color); g.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g; ctx.fillRect(x - r, y - r, r * 2, r * 2);
+  };
+  glow(260, 400, 700, 'rgba(121,218,250,0.15)');
+  glow(2140, 400, 700, 'rgba(255,110,150,0.15)');
+
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const colorAt = (t, a) => {
+    const c1 = [121, 218, 250], c2 = [255, 110, 150];
+    return `rgba(${Math.round(lerp(c1[0], c2[0], t))},${Math.round(lerp(c1[1], c2[1], t))},${Math.round(lerp(c1[2], c2[2], t))},${a})`;
+  };
+
+  // A layered feed-forward network spanning the full width.
+  // Layer sizes form an encoder / decoder silhouette; centre layers are dimmed under the text.
+  const sizes = [6, 10, 14, 12, 8, 8, 12, 14, 10, 6];
+  const L = sizes.length;
+  const marginX = 110, padTop = 70, padBottom = 730;
+  const layers = sizes.map((n, li) => {
+    const x = marginX + (W - marginX * 2) * (li / (L - 1));
+    const spacing = (padBottom - padTop) / (n + 1);
+    return Array.from({ length: n }, (_, k) => ({
+      x: x + (rnd() - 0.5) * 24,
+      y: padTop + spacing * (k + 1) + (rnd() - 0.5) * 18,
+      t: x / W,
+      act: rnd(), // activation strength drives brightness
+    }));
+  });
+
+  // Fade factor: layers near the centre sit behind the headline, so keep them quiet
+  const centreFade = (x) => {
+    const d = Math.abs(x - W / 2) / (W / 2); // 0 at centre, 1 at edges
+    return 0.22 + 0.78 * Math.pow(d, 1.4);
+  };
+
+  // Edges
+  ctx.lineWidth = 1.1;
+  for (let li = 0; li < L - 1; li++) {
+    for (const a of layers[li]) {
+      for (const b of layers[li + 1]) {
+        if (rnd() > 0.62) continue; // sparse connectivity keeps it legible
+        const w = (a.act + b.act) / 2;
+        const alpha = (0.06 + w * 0.26) * Math.min(centreFade(a.x), centreFade(b.x));
+        const g = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
+        g.addColorStop(0, colorAt(a.t, alpha)); g.addColorStop(1, colorAt(b.t, alpha));
+        ctx.strokeStyle = g;
+        ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+      }
+    }
+  }
+
+  // Signal pulses travelling along a handful of edges
+  for (let i = 0; i < 26; i++) {
+    const li = Math.floor(rnd() * (L - 1));
+    const a = layers[li][Math.floor(rnd() * layers[li].length)];
+    const b = layers[li + 1][Math.floor(rnd() * layers[li + 1].length)];
+    const p = 0.2 + rnd() * 0.6;
+    const x = lerp(a.x, b.x, p), y = lerp(a.y, b.y, p);
+    const f = centreFade(x);
+    glow(x, y, 26, colorAt(x / W, 0.45 * f));
+    ctx.fillStyle = `rgba(255,255,255,${0.9 * f})`;
+    ctx.beginPath(); ctx.arc(x, y, 2.4, 0, Math.PI * 2); ctx.fill();
+  }
+
+  // Nodes
+  for (const layer of layers) {
+    for (const n of layer) {
+      const f = centreFade(n.x);
+      const r = 5 + n.act * 7;
+      ctx.shadowBlur = 22 * f; ctx.shadowColor = colorAt(n.t, 0.9);
+      ctx.fillStyle = colorAt(n.t, (0.35 + n.act * 0.65) * f);
+      ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI * 2); ctx.fill();
+      // Hollow ring for the "activated" nodes
+      if (n.act > 0.72) {
+        ctx.shadowBlur = 0;
+        ctx.strokeStyle = colorAt(n.t, 0.9 * f); ctx.lineWidth = 1.6;
+        ctx.beginPath(); ctx.arc(n.x, n.y, r + 7, 0, Math.PI * 2); ctx.stroke();
+        ctx.lineWidth = 1.1;
+      }
+    }
+  }
+  ctx.shadowBlur = 0;
+
+  // Layer labels on the far left and right (input / output) — quiet monospace hints
+  ctx.font = '500 20px Menlo, Consolas, monospace';
+  ctx.textAlign = 'center';
+  ctx.fillStyle = 'rgba(121,218,250,0.55)';
+  ctx.fillText('input', layers[0][0].x, 44);
+  ctx.fillStyle = 'rgba(255,110,150,0.55)';
+  ctx.fillText('output', layers[L - 1][0].x, 44);
+
+  // Fine dot grid texture
+  ctx.fillStyle = 'rgba(255,255,255,0.04)';
+  for (let x = 20; x < W; x += 40) for (let y = 20; y < H; y += 40) ctx.fillRect(x, y, 1.5, 1.5);
+
+  // Dark scrim behind the headline so the type stays crisp
+  const scrim = ctx.createRadialGradient(W / 2, 380, 120, W / 2, 380, 760);
+  scrim.addColorStop(0, 'rgba(7,8,26,0.82)'); scrim.addColorStop(1, 'rgba(7,8,26,0)');
+  ctx.fillStyle = scrim; ctx.fillRect(0, 0, W, H);
+
+  // Vignette
+  const v = ctx.createRadialGradient(W / 2, H / 2, 600, W / 2, H / 2, 1500);
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.5)');
+  ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+</script>
+</body>
+</html>
