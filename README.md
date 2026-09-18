@@ -113,19 +113,19 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=6&hide=html,css,arduino" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide_border=true&langs_count=6&hide=html,css,arduino" alt="PSheon | Top Languages" height="150px" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs" />
-    <img src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&hide_border=true&show_icons=true&hide=contribs" alt="PSheon | GitHub Stats" height="150px" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=psheon&theme=dracula" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=psheon&theme=default" alt="PSheon | Profile details and contributions" width="100%" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=psheon&bg_color=282a36&color=f8f8f2&line=ff6e96&point=79dafa&area=true&hide_border=true" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true&hide_border=true" alt="PSheon | Activity Graph" height="200px" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=dracula" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=default" alt="PSheon | GitHub Stats" height="180px" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=psheon&theme=dracula&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=79dafa" />
+    <img src="https://streak-stats.demolab.com/?user=psheon&theme=default&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=ff6e96" alt="PSheon | Streak" height="180px" />
   </picture>
 </p>
 
