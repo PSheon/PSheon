@@ -1,169 +1,111 @@
-<div style="width:100%">
-  <img src="./assets/images/welcome-banner.png" alt="banner" />
+<div align="center">
+  <img src="./assets/images/welcome-banner.webp" alt="See · Think · Act — computer vision · multi-agent · LLM · edge" width="100%" />
 </div>
 
 <p align="center">
-  <picture>
-    <img
-      src="./assets/images/energy-ball.gif"
-      alt="energy ball"
-      width="48px" height="48px" style="padding-right:6px;"
-    >
-  </picture>
-  <picture>
-    <img
-      src="./assets/images/energy-ball.gif"
-      alt="energy ball"
-      width="48px" height="48px" style="padding-right:6px;"
-    >
-  </picture>
-  <picture>
-    <img
-      src="./assets/images/energy-ball.gif"
-      alt="energy ball"
-      width="48px" height="48px" style="padding-right:6px;"
-    >
-  </picture>
-  <picture>
-    <img
-      src="./assets/images/energy-ball.gif"
-      alt="energy ball"
-      width="48px" height="48px" style="padding-right:6px;"
-    >
-  </picture>
-  <picture>
-    <img
-      src="./assets/images/energy-ball.gif"
-      alt="energy ball"
-      width="48px" height="48px" style="padding-right:6px;"
-    >
-  </picture>
+  <a href="https://github.com/PSheon">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2600&pause=900&color=79DAFA&center=true&vCenter=true&width=760&lines=Machines+that+see%2C+agents+that+act;Multi-task+perception+on+the+edge+%E2%80%94+one+forward+pass;Multi-agent+orchestration+%C2%B7+LLM+%C2%B7+MCP;From+CCTV+frames+to+decisions%2C+in+metres" alt="typing intro" />
+  </a>
 </p>
 
-<br />
+<p align="center">
+  <img src="https://img.shields.io/github/followers/PSheon?style=flat-square&color=79dafa&labelColor=0A0A23&label=followers" alt="followers" />
+</p>
 
-![followers](https://img.shields.io/github/followers/PSheon?color=9fe9ff)
-![views](https://komarev.com/ghpvc/?username=psheon&color=ff69b4&label=visitors)
+<img src="./assets/images/divider.svg" alt="" width="100%" />
 
 ## Hi there 👋
 
-✨ I'm Paul. Frontend Architect, Web Developer, Consultant and Crypto Enthusiast.
+I'm **Paul**. I build machines that see and agents that act, and I like to own the whole path: the perception model on the edge device, the tracks and events it produces, and the agents that decide what to do with them.
 
-### 🌟 I'm currently working on
+- 👁 **Computer vision** — multi-task perception networks, teacher / student distillation, ONNX / TensorRT on Jetson
+- 🤝 **Multi-agent systems** — orchestrator / worker designs, MCP tool contracts, edge-and-cloud split
+- 🧠 **LLM** — multimodal document understanding, structured output, VLMs on trigger rather than on every frame
+- ⚡ **Edge** — RTSP ingest, GStreamer, WebRTC, Rust and Kotlin Multiplatform where Python is too slow
+- 📍 Kaohsiung, Taiwan · building at [Syncrobotic](https://syncrobotic.ai/)
 
-<p align="center">
-  <a href="https://app.buxx.finance/project/list/" target="_blank">
-    <img src="https://img.shields.io/badge/Buxx%20Finance-0A0A23?style=for-the-badge&logo=ethereum&logoColor=79dafa" />
-  </a>
-  <a href="https://analysis-bot-stage.buxx.finance/strategy/dashboard/" target="_blank">
-    <img src="https://img.shields.io/badge/Trading%20Analysis%20Bot-ff6e96?style=for-the-badge&logo=googlegemini&logoColor=79dafa" />
-  </a>
-</p>
+<img src="./assets/images/divider.svg" alt="" width="100%" />
 
----
+## 🔭 What I'm building
 
-### 🍹 Statistics & Achievements
+### [HydraNet](https://github.com/Syncrobotic/SyncAI-Lib-HydraNet) — one camera, one model, everything in metres
+
+<a href="https://github.com/Syncrobotic/SyncAI-Lib-HydraNet">
+  <img src="./assets/images/hydranet-demo.webp" alt="HydraNet demo: detections and tracks on the left, the metric 3D scene with live dwell field on the right" width="100%" />
+</a>
+
+<p align="center"><sub>Left: detections and tracks with a staff / customer verdict. Right: the same moment in metres, with the live dwell field on the floor.</sub></p>
+
+- **One ~8M-parameter network, one forward pass.** A shared RegNetX-800MF + BiFPN trunk carrying detection (`person`, `bag`, `device`, `boxed_stock`), pose (17 keypoints decoded inside the boxes) and terrain segmentation (`floor`, `wall`, `column`, `fixture`, `person`).
+- **Teachers once, student every frame.** SAM 3, Grounding DINO, Depth-Anything V2 and ViTPose run once per camera to label and to fit the scene geometry. Anything constant on a fixed camera is cached, never learned. Only what changes frame to frame spends the GPU.
+- **Tracks in metres, not pixels.** Boxes become floor positions through the cached geometry, so dwell, paths and queues come out in real units. Exported to ONNX / TensorRT for Jetson Orin, budgeted at 96 streams × 5 fps.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧠 LLM</h3>
+      <p><a href="https://github.com/PSheon/PDF2Markdown"><b>PDF2Markdown</b></a> — multimodal LLM transcription of PDFs and images into clean Markdown: tables, formulas and diagrams preserved. Gemini-powered, model-swappable.</p>
+      <p>In HydraNet the VLM is a <i>trigger</i>, not a per-frame cost: rules and a tiny temporal model raise events, the VLM explains them.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🤝 Multi-Agent</h3>
+      <p><b>Omnie agent orchestrator</b> — an orchestrator / worker design split across edge and cloud: perception workers stay on the device next to the camera, planning and retrieval run where the big models live, MCP defines the tool contract between them.</p>
+      <p><sub>Private for now. Architecture notes coming.</sub></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>👁 Computer Vision</h3>
+      <p><a href="https://github.com/Syncrobotic/SyncAI-Lib-HydraNet"><b>HydraNet</b></a> — the multi-task perception network above, plus the commissioning pipeline (<code>syncai_bev3d</code>) that turns one static plate into a metric 3D scene, walkable floor, shelf ROIs and false-positive polygons per camera.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚡ Edge</h3>
+      <p><a href="https://github.com/Syncrobotic/SyncAI-Data-RtspRecorder"><b>RtspRecorder</b></a> — multi-stream RTSP recording in Rust: auto-segment, reconnect, cross-day schedules, MKV → MP4, upload to GCS.</p>
+      <p><a href="https://github.com/Syncrobotic/SyncAI-Lib-KmpWebRTC"><b>KmpWebRTC</b></a> — Kotlin Multiplatform WebRTC SDK with HTTP signaling and per-direction media control, zero WebRTC boilerplate.</p>
+    </td>
+  </tr>
+</table>
+
+<img src="./assets/images/divider.svg" alt="" width="100%" />
+
+## 🧰 Stack
+
+<table>
+  <tr><td><b>Vision</b></td><td><img src="https://img.shields.io/badge/PyTorch-0A0A23?style=flat-square&logo=pytorch&logoColor=79dafa" alt="PyTorch" /> <img src="https://img.shields.io/badge/ONNX-0A0A23?style=flat-square&logo=onnx&logoColor=79dafa" alt="ONNX" /> <img src="https://img.shields.io/badge/TensorRT%20%C2%B7%20Jetson-0A0A23?style=flat-square&logo=nvidia&logoColor=79dafa" alt="TensorRT %C2%B7 Jetson" /> <img src="https://img.shields.io/badge/OpenCV-0A0A23?style=flat-square&logo=opencv&logoColor=79dafa" alt="OpenCV" /> <img src="https://img.shields.io/badge/Hugging%20Face-0A0A23?style=flat-square&logo=huggingface&logoColor=79dafa" alt="Hugging Face" /> <img src="https://img.shields.io/badge/Python-0A0A23?style=flat-square&logo=python&logoColor=79dafa" alt="Python" /></td></tr>
+  <tr><td><b>LLM / Agents</b></td><td><img src="https://img.shields.io/badge/Claude-0A0A23?style=flat-square&logo=claude&logoColor=ff6e96" alt="Claude" /> <img src="https://img.shields.io/badge/Gemini-0A0A23?style=flat-square&logo=googlegemini&logoColor=ff6e96" alt="Gemini" /> <img src="https://img.shields.io/badge/Ollama-0A0A23?style=flat-square&logo=ollama&logoColor=ff6e96" alt="Ollama" /> <img src="https://img.shields.io/badge/LangGraph-0A0A23?style=flat-square&logo=langgraph&logoColor=ff6e96" alt="LangGraph" /> <img src="https://img.shields.io/badge/MCP-0A0A23?style=flat-square&logo=modelcontextprotocol&logoColor=ff6e96" alt="MCP" /></td></tr>
+  <tr><td><b>Edge / Infra</b></td><td><img src="https://img.shields.io/badge/ROS-0A0A23?style=flat-square&logo=ros&logoColor=b9a5ff" alt="ROS" /> <img src="https://img.shields.io/badge/GStreamer-0A0A23?style=flat-square&logo=gstreamer&logoColor=b9a5ff" alt="GStreamer" /> <img src="https://img.shields.io/badge/WebRTC-0A0A23?style=flat-square&logo=webrtc&logoColor=b9a5ff" alt="WebRTC" /> <img src="https://img.shields.io/badge/Kotlin%20Multiplatform-0A0A23?style=flat-square&logo=kotlin&logoColor=b9a5ff" alt="Kotlin Multiplatform" /> <img src="https://img.shields.io/badge/Rust-0A0A23?style=flat-square&logo=rust&logoColor=b9a5ff" alt="Rust" /> <img src="https://img.shields.io/badge/Solidity-0A0A23?style=flat-square&logo=solidity&logoColor=b9a5ff" alt="Solidity" /> <img src="https://img.shields.io/badge/Docker-0A0A23?style=flat-square&logo=docker&logoColor=b9a5ff" alt="Docker" /> <img src="https://img.shields.io/badge/PostgreSQL-0A0A23?style=flat-square&logo=postgresql&logoColor=b9a5ff" alt="PostgreSQL" /></td></tr>
+  <tr><td><b>Also</b></td><td><img src="https://img.shields.io/badge/TypeScript-0A0A23?style=flat-square&logo=typescript&logoColor=8b949e" alt="TypeScript" /> <img src="https://img.shields.io/badge/React-0A0A23?style=flat-square&logo=react&logoColor=8b949e" alt="React" /> <img src="https://img.shields.io/badge/Next.js-0A0A23?style=flat-square&logo=nextdotjs&logoColor=8b949e" alt="Next.js" /></td></tr>
+</table>
+
+<img src="./assets/images/divider.svg" alt="" width="100%" />
+
+## 📈 Stats
 
 <p align="center">
   <picture>
-    <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&theme=dracula&hide_border=true&langs_count=4&hide=javascript,html,Arduino"
-    >
-    <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=psheon&layout=compact&title_color=ff6e96&icon_color=79dafa&hide=javascript,html,Arduino&langs_count=4"
-      alt="PSheon | Most Usage Languages"
-      height="150px"
-    >
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=dracula" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=psheon&theme=default" alt="PSheon | GitHub Stats" height="160px" />
   </picture>
+  &nbsp;
   <picture>
-    <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=psheon&theme=dracula&hide_border=true&show_icons=true&hide=contribs"
-    >
-    <img
-      src="https://github-readme-stats.vercel.app/api?username=psheon&title_color=ff6e96&icon_color=79dafa&show_icons=true&hide=contribs"
-      alt="PSheon | Github Stats"
-      height="150px"
-    >
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=psheon&theme=dracula&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=79dafa" />
+    <img src="https://streak-stats.demolab.com/?user=psheon&theme=default&hide_border=true&ring=ff6e96&fire=ff6e96&currStreakLabel=ff6e96" alt="PSheon | Streak" height="160px" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source
-      media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=psheon&bg_color=282a36&color=f8f8f2&line=ff6e96&point=79dafa&area=true&hide_border=true"
-    >
-    <img
-      src="https://github-readme-activity-graph.vercel.app/graph?username=psheon&bg_color=fffefe&color=434d58&line=ff6e96&point=79dafa&area=true"
-      alt="PSheon | Activity Graph"
-      height="200px"
-    >
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/images/contributions-dark.svg" />
+    <img src="./assets/images/contributions-light.svg" alt="PSheon | Contributions in the last 12 months, weekly" width="690px" />
   </picture>
 </p>
 
-### 🤔 I'm learning
+<img src="./assets/images/divider.svg" alt="" width="100%" />
 
-[<img align="left" src="./assets/images/learning/langgraph.svg" alt="langgraph" width="32" height="32" style="padding-right:10px;" />](https://www.langchain.com/langgraph/)
+## 🤝 Find me
 
-<br />
-
-### 🐧 Connect with me
-
-[<img align="left" src="./assets/images/social-media/twitter.svg" alt="PSheon | Twitter" width="32" height="32" style="padding-right:10px;" />](https://twitter.com/0xPSheon)
-[<img align="left" src="./assets/images/social-media/linkedin.svg" alt="PSheon | Twitter" width="32" height="32" style="padding-right:10px;" />](https://www.linkedin.com/in/psheon/)
-
-<br />
-<br />
-
-### 🔥 Languages and Skills
-
-[<img align="left" src="./assets/images/skills/amazon_aws-icon.svg" alt="aws" width="32" height="32" style="padding-right:10px;" />](https://aws.amazon.com)
-[<img align="left" src="./assets/images/skills/microsoft_azure-icon.svg" alt="azure" width="32" height="32" style="padding-right:10px;" />](https://azure.microsoft.com/)
-[<img align="left" src="./assets/images/skills/ubuntu-icon.svg" alt="ubuntu" width="32" height="32" style="padding-right:10px;" />](https://ubuntu.com/)
-[<img align="left" src="./assets/images/skills/brave.svg" alt="brave" width="32" height="32" style="padding-right:10px;" />](https://brave.com/)
-[<img align="left" src="./assets/images/skills/figma-icon.svg" alt="figma" width="32" height="32" style="padding-right:10px;" />](https://www.figma.com/)
-[<img align="left" src="./assets/images/skills/blender.svg" alt="blender" width="32" height="32" style="padding-right:10px;" />](https://www.blender.org/)
-[<img align="left" src="./assets/images/skills/notion.svg" alt="notion" width="32" height="32" style="padding-right:10px;" />](https://www.notion.so/)
-[<img align="left" src="./assets/images/skills/git-scm-icon.svg" alt="git" width="32" height="32" style="padding-right:10px;" />](https://git-scm.com/)
-[<img align="left" src="./assets/images/skills/github-actions.svg" alt="github actions" width="32" height="32" style="padding-right:10px;" />](https://github.com/features/actions)
-[<img align="left" src="./assets/images/skills/file_type_vscode.svg" alt="vscode" width="32" height="32" style="padding-right:10px;" />](https://code.visualstudio.com/)
-[<img align="left" src="./assets/images/skills/docker-icon.svg" alt="docker" width="32" height="32" style="padding-right:10px;" />](https://www.docker.com/)
-[<img align="left" src="./assets/images/skills/eslint-icon.svg" alt="eslint" width="32" height="32" style="padding-right:10px;" />](https://eslint.org/)
-[<img align="left" src="./assets/images/skills/css3-original-wordmark.svg" alt="css3" width="32" height="32" style="padding-right:10px;" />](https://www.w3schools.com/css/)
-[<img align="left" src="./assets/images/skills/html5-original-wordmark.svg" alt="html5" width="32" height="32" style="padding-right:10px;" />](https://www.w3.org/html/)
-[<img align="left" src="./assets/images/skills/markdown-light.svg" alt="markdown" width="32" height="32" style="padding-right:10px;" />](https://www.markdownguide.org/getting-started/#gh-light-mode-only)
-[<img align="left" src="./assets/images/skills/markdown-dark.svg" alt="markdown" width="32" height="32" style="padding-right:10px;" />](https://www.markdownguide.org/getting-started/#gh-dark-mode-only)
-[<img align="left" src="./assets/images/skills/threejs-light.svg" alt="three.js" width="32" height="32" style="padding-right:10px;" />](https://threejs.org/#gh-light-mode-only)
-[<img align="left" src="./assets/images/skills/threejs-dark.svg" alt="three.js" width="32" height="32" style="padding-right:10px;" />](https://threejs.org/#gh-dark-mode-only)
-[<img align="left" src="./assets/images/skills/cpp.svg" alt="c++" width="32" height="32" style="padding-right:10px;" />](https://cplusplus.com/)
-[<img align="left" src="./assets/images/skills/typescript-original.svg" alt="typescript" width="32" height="32" style="padding-right:10px;" />](https://www.typescriptlang.org/)
-[<img align="left" src="./assets/images/skills/nginx-icon.svg" alt="nginx" width="32" height="32" style="padding-right:10px;" />](https://www.nginx.com/)
-[<img align="left" src="./assets/images/skills/strapi.svg" alt="strapi" width="32" height="32" style="padding-right:10px;" />](https://strapi.io/)
-[<img align="left" src="./assets/images/skills/nextjs-light.svg" alt="next.js" width="32" height="32" style="padding-right:10px;" />](https://nextjs.org/#gh-light-mode-only)
-[<img align="left" src="./assets/images/skills/nextjs-dark.svg" alt="next.js" width="32" height="32" style="padding-right:10px;" />](https://nextjs.org/#gh-dark-mode-only)
-[<img align="left" src="./assets/images/skills/reactjs-icon.svg" alt="react" width="32" height="32" style="padding-right:10px;" />](https://reactjs.org/)
-[<img align="left" src="./assets/images/skills/redux.svg" alt="redux" width="32" height="32" style="padding-right:10px;" />](https://redux.js.org/)
-[<img align="left" src="./assets/images/skills/react-query.svg" alt="react query" width="32" height="32" style="padding-right:10px;" />](https://react-query-v3.tanstack.com/)
-[<img align="left" src="./assets/images/skills/iconify-light.svg" alt="iconify" width="32" height="32" style="padding-right:10px;" />](https://iconify.design/#gh-light-mode-only)
-[<img align="left" src="./assets/images/skills/iconify-dark.svg" alt="iconify" width="32" height="32" style="padding-right:10px;" />](https://iconify.design/#gh-dark-mode-only)
-[<img align="left" src="./assets/images/skills/sass-original.svg" alt="sass" width="32" height="32" style="padding-right:10px;" />](https://sass-lang.com)
-[<img align="left" src="./assets/images/skills/tailwindcss-icon.svg" alt="tailwind" width="32" height="32" style="padding-right:10px;" />](https://tailwindcss.com/)
-[<img align="left" src="./assets/images/skills/mui.svg" alt="mui" width="32" height="32" style="padding-right:10px;" />](https://mui.com/)
-[<img align="left" src="./assets/images/skills/jestjsio-icon.svg" alt="jest" width="32" height="32" style="padding-right:10px;" />](https://jestjs.io/)
-[<img align="left" src="./assets/images/skills/cypress-icon.svg" alt="cypress" width="32" height="32" style="padding-right:10px;" />](https://www.cypress.io/)
-[<img align="left" src="./assets/images/skills/redis-icon.svg" alt="redis" width="32" height="32" style="padding-right:10px;" />](https://redis.io/)
-[<img align="left" src="./assets/images/skills/mongodb-icon.svg" alt="mongodb" width="32" height="32" style="padding-right:10px;" />](https://www.mongodb.com/)
-[<img align="left" src="./assets/images/skills/postgresql-icon.svg" alt="postgreSQL" width="32" height="32" style="padding-right:10px;" />](https://www.postgresql.org/)
-[<img align="left" src="./assets/images/skills/getpostman-icon.svg" alt="postman" width="32" height="32" style="padding-right:10px;" />](https://www.postman.com/)
-[<img align="left" src="./assets/images/skills/python-original.svg" alt="python" width="32" height="32" style="padding-right:10px;" />](https://www.python.org)
-[<img align="left" src="./assets/images/skills/jupyter-icon.svg" alt="jupyter" width="32" height="32" style="padding-right:10px;" />](https://jupyter.org/)
-[<img align="left" src="./assets/images/skills/numpy-original.svg" alt="numpy" width="32" height="32" style="padding-right:10px;" />](https://numpy.org/)
-[<img align="left" src="./assets/images/skills/pandas-original.svg" alt="pandas" width="32" height="32" style="padding-right:10px;" />](https://pandas.pydata.org/)
-[<img align="left" src="./assets/images/skills/tensorflow-icon.svg" alt="tensorflow" width="32" height="32" style="padding-right:10px;" />](https://www.tensorflow.org/)
-[<img align="left" src="./assets/images/skills/solidity-light.svg" alt="solidity" width="32" height="32" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-light-mode-only)
-[<img align="left" src="./assets/images/skills/solidity-dark.svg" alt="solidity" width="32" height="32" style="padding-right:10px;" />](https://github.com/ethereum/solidity#gh-dark-mode-only)
-[<img align="left" src="./assets/images/skills/hardhat-icon.svg" alt="hardhat" width="32" height="32" style="padding-right:10px;" />](https://hardhat.org/)
-[<img align="left" src="./assets/images/skills/rust-light.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-light-mode-only)
-[<img align="left" src="./assets/images/skills/rust-dark.svg" alt="rust" width="32" height="32" style="padding-right:10px;" />](https://www.rust-lang.org/#gh-dark-mode-only)
-[<img align="left" src="./assets/images/skills/turborepo-light.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-light-mode-only)
-[<img align="left" src="./assets/images/skills/turborepo-dark.svg" alt="turborepo" width="32" height="32" style="padding-right:10px;" />](https://turbo.build//#gh-dark-mode-only)
-[<img align="left" src="./assets/images/learning/trpc.svg" alt="tRPC" width="32" height="32" style="padding-right:10px;" />](https://trpc.io/)
+<p>
+  <a href="https://x.com/paul_sheon"><img src="https://img.shields.io/badge/X-0A0A23?style=for-the-badge&logo=x&logoColor=ffffff" alt="X" /></a>
+  <a href="https://www.linkedin.com/in/psheon/"><img src="https://img.shields.io/badge/LinkedIn-0A0A23?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzc5ZGFmYSI%2BPHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjVhMi4wNiAyLjA2IDAgMCAxIDIuMDYzLTIuMDYzYzEuMTQgMCAyLjA2NC45MjUgMi4wNjQgMi4wNjNzLS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg%3D%3D" alt="LinkedIn" /></a>
+  <a href="mailto:pauljiang61020@gmail.com"><img src="https://img.shields.io/badge/Email-0A0A23?style=for-the-badge&logo=gmail&logoColor=ff6e96" alt="Email" /></a>
+</p>
