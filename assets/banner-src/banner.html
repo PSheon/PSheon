@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  html, body { margin: 0; padding: 0; background: #07081a; }
+  body { width: 2400px; height: 800px; overflow: hidden; position: relative; }
+  canvas { position: absolute; inset: 0; }
+  .text {
+    position: absolute; left: 0; right: 0; top: 130px;
+    display: flex; flex-direction: column; align-items: center;
+    color: #eef2ff; text-align: center;
+  }
+  .mono { font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace; }
+  .sub { font-size: 36px; font-weight: 600; color: #e2e6ff; letter-spacing: 0.32em; }
+  .sub .dot { color: #ff6e96; }
+  .foot { position: absolute; left: 0; right: 0; top: 470px; text-align: center; font-size: 24px; color: #8d97c4; letter-spacing: 0.16em; }
+</style>
+</head>
+<body>
+<canvas id="c" width="2400" height="800"></canvas>
+<div class="foot mono">COMPUTER VISION · MULTI-AGENT · LLM · EDGE</div>
+<script>
+  let seed = 20260918;
+  const rnd = () => { seed = (seed * 1664525 + 1013904223) % 4294967296; return seed / 4294967296; };
+  const W = 2400, H = 800;
+  const ctx = document.getElementById('c').getContext('2d');
+  const CY = '121,218,250', PK = '255,110,150', VI = '185,165,255';
+  const rgba = (c, a) => `rgba(${c},${a})`;
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const mono = (px, w = 500) => `${w} ${px}px Menlo, Consolas, monospace`;
+
+  // ---------- background ----------
+  const bg = ctx.createLinearGradient(0, 0, W, H);
+  bg.addColorStop(0, '#07081a'); bg.addColorStop(1, '#0c0a26');
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  const glow = (x, y, r, color) => {
+    const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0, color); g.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g; ctx.fillRect(x - r, y - r, r * 2, r * 2);
+  };
+  glow(420, 400, 640, rgba(CY, 0.13));
+  glow(1990, 400, 640, rgba(PK, 0.13));
+
+  // faint layered network across the whole banner
+  const sizes = [5, 8, 11, 9, 7, 7, 9, 11, 8, 5];
+  const L = sizes.length, mX = 60, pT = 60, pB = 740;
+  const layers = sizes.map((n, li) => {
+    const x = mX + (W - mX * 2) * (li / (L - 1));
+    const sp = (pB - pT) / (n + 1);
+    return Array.from({ length: n }, (_, k) => ({ x: x + (rnd() - 0.5) * 30, y: pT + sp * (k + 1) + (rnd() - 0.5) * 24, t: x / W }));
+  });
+  const colorAt = (t, a) => `rgba(${Math.round(lerp(121, 255, t))},${Math.round(lerp(218, 110, t))},${Math.round(lerp(250, 150, t))},${a})`;
+  ctx.lineWidth = 1;
+  for (let li = 0; li < L - 1; li++) for (const a of layers[li]) for (const b of layers[li + 1]) {
+    if (rnd() > 0.5) continue;
+    const g = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
+    g.addColorStop(0, colorAt(a.t, 0.07)); g.addColorStop(1, colorAt(b.t, 0.07));
+    ctx.strokeStyle = g; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+  }
+  for (const layer of layers) for (const n of layer) {
+    ctx.fillStyle = colorAt(n.t, 0.22); ctx.beginPath(); ctx.arc(n.x, n.y, 3, 0, Math.PI * 2); ctx.fill();
+  }
+  // dot grid
+  ctx.fillStyle = 'rgba(255,255,255,0.04)';
+  for (let x = 20; x < W; x += 40) for (let y = 20; y < H; y += 40) ctx.fillRect(x, y, 1.5, 1.5);
+
+  // ---------- LEFT: computer vision panel ----------
+  const P = { x: 80, y: 110, w: 500, h: 560 };
+  // panel fill + grid
+  ctx.fillStyle = 'rgba(7,8,26,0.72)'; ctx.fillRect(P.x, P.y, P.w, P.h);
+  ctx.strokeStyle = rgba(CY, 0.07); ctx.lineWidth = 1;
+  for (let x = P.x; x <= P.x + P.w; x += 40) { ctx.beginPath(); ctx.moveTo(x, P.y); ctx.lineTo(x, P.y + P.h); ctx.stroke(); }
+  for (let y = P.y; y <= P.y + P.h; y += 40) { ctx.beginPath(); ctx.moveTo(P.x, y); ctx.lineTo(P.x + P.w, y); ctx.stroke(); }
+  // viewfinder corners
+  ctx.strokeStyle = rgba(CY, 0.9); ctx.lineWidth = 3;
+  const cornerLen = 34;
+  [[P.x, P.y, 1, 1], [P.x + P.w, P.y, -1, 1], [P.x, P.y + P.h, 1, -1], [P.x + P.w, P.y + P.h, -1, -1]].forEach(([x, y, sx, sy]) => {
+    ctx.beginPath(); ctx.moveTo(x, y + sy * cornerLen); ctx.lineTo(x, y); ctx.lineTo(x + sx * cornerLen, y); ctx.stroke();
+  });
+  ctx.strokeStyle = rgba(CY, 0.25); ctx.lineWidth = 1; ctx.strokeRect(P.x, P.y, P.w, P.h);
+  // header label
+  ctx.font = mono(19); ctx.textAlign = 'left'; ctx.fillStyle = rgba(CY, 0.85);
+  ctx.fillText('● REC  cam04 · 5 fps', P.x + 18, P.y + 32);
+  ctx.textAlign = 'right'; ctx.fillStyle = 'rgba(255,255,255,0.45)';
+  ctx.fillText('hydranet ~8M', P.x + P.w - 18, P.y + 32);
+  // walkable floor (segmentation) polygon
+  ctx.fillStyle = rgba(CY, 0.09); ctx.strokeStyle = rgba(CY, 0.35); ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(P.x + 40, P.y + P.h - 30); ctx.lineTo(P.x + 170, P.y + 330); ctx.lineTo(P.x + 420, P.y + 330); ctx.lineTo(P.x + P.w - 40, P.y + P.h - 30); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.font = mono(15); ctx.textAlign = 'left'; ctx.fillStyle = rgba(CY, 0.55);
+  ctx.fillText('floor  mIoU .91', P.x + 60, P.y + P.h - 44);
+  // shelf fixture polygon
+  ctx.fillStyle = rgba(VI, 0.10); ctx.strokeStyle = rgba(VI, 0.4);
+  ctx.beginPath(); ctx.rect(P.x + 400, P.y + 120, 130, 210); ctx.fill(); ctx.stroke();
+  ctx.fillStyle = rgba(VI, 0.7); ctx.fillText('fixture', P.x + 410, P.y + 142);
+
+  // a person: box, label, skeleton
+  const person = (bx, by, bw, bh, color, label, staff) => {
+    ctx.strokeStyle = rgba(color, 0.95); ctx.lineWidth = 2; ctx.strokeRect(bx, by, bw, bh);
+    ctx.fillStyle = rgba(color, 0.95); ctx.font = mono(15, 600);
+    const lw = ctx.measureText(label).width + 16;
+    ctx.fillRect(bx, by - 24, lw, 24); ctx.fillStyle = '#07081a'; ctx.textAlign = 'left'; ctx.fillText(label, bx + 8, by - 7);
+    // 17-ish keypoints, normalised inside the box
+    const k = {
+      nose: [0.5, 0.08], ls: [0.36, 0.22], rs: [0.64, 0.22], le: [0.28, 0.4], re: [0.72, 0.4], lw: [0.24, 0.56], rw: [0.78, 0.56],
+      lh: [0.4, 0.52], rh: [0.6, 0.52], lk: [0.4, 0.74], rk: [0.62, 0.74], la: [0.4, 0.96], ra: [0.64, 0.96],
+    };
+    const pt = (n) => [bx + k[n][0] * bw, by + k[n][1] * bh];
+    const bones = [['nose', 'ls'], ['nose', 'rs'], ['ls', 'rs'], ['ls', 'le'], ['le', 'lw'], ['rs', 're'], ['re', 'rw'], ['ls', 'lh'], ['rs', 'rh'], ['lh', 'rh'], ['lh', 'lk'], ['lk', 'la'], ['rh', 'rk'], ['rk', 'ra']];
+    ctx.strokeStyle = rgba(color, 0.7); ctx.lineWidth = 2;
+    for (const [a, b] of bones) { const [ax, ay] = pt(a), [bx2, by2] = pt(b); ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx2, by2); ctx.stroke(); }
+    for (const n in k) { const [x, y] = pt(n); ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(x, y, 3.2, 0, Math.PI * 2); ctx.fill(); }
+    // foot point + track trail
+    const fx = bx + bw / 2, fy = by + bh;
+    ctx.setLineDash([6, 6]); ctx.strokeStyle = rgba(color, 0.55); ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(fx, fy); ctx.bezierCurveTo(fx - 60, fy + 40, fx - 120, fy + 20, fx - 170, fy + 60); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = rgba(color, 0.9); ctx.beginPath(); ctx.arc(fx, fy, 4.5, 0, Math.PI * 2); ctx.fill();
+    ctx.font = mono(14); ctx.fillStyle = rgba(color, 0.8); ctx.textAlign = 'left';
+    ctx.fillText(staff, fx + 10, fy + 18);
+  };
+  person(P.x + 130, P.y + 200, 118, 300, CY, 'person 0.94', 'id 17 · 1.78 m');
+  person(P.x + 300, P.y + 250, 96, 250, PK, 'person 0.88', 'id 23 · staff');
+  // a bag box
+  ctx.strokeStyle = rgba(VI, 0.9); ctx.lineWidth = 2; ctx.strokeRect(P.x + 250, P.y + 380, 44, 52);
+  ctx.fillStyle = rgba(VI, 0.9); ctx.font = mono(13, 600); ctx.textAlign = 'left'; ctx.fillText('bag .81', P.x + 250, P.y + 372);
+
+  // ---------- RIGHT: multi-agent graph ----------
+  const G = { cx: 2060, cy: 400, r: 170 };
+  ctx.font = mono(19); ctx.textAlign = 'left'; ctx.fillStyle = rgba(PK, 0.85);
+  ctx.fillText('◆ multi-agent · 5 workers', G.cx - 250, 142);
+  ctx.textAlign = 'right'; ctx.fillStyle = 'rgba(255,255,255,0.45)';
+  ctx.fillText('llm · mcp', G.cx + 250, 142);
+  const workers = ['vision', 'planner', 'retrieval', 'tools', 'memory'];
+  const wp = workers.map((nm, i) => {
+    const a = -Math.PI / 2 + (i / workers.length) * Math.PI * 2;
+    return { nm, x: G.cx + Math.cos(a) * G.r, y: G.cy + Math.sin(a) * G.r };
+  });
+  // ring between workers
+  ctx.setLineDash([4, 8]); ctx.strokeStyle = rgba(PK, 0.18); ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.arc(G.cx, G.cy, G.r, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
+  // spokes with arrowheads both ways + pulses
+  const arrow = (x1, y1, x2, y2, color) => {
+    const ang = Math.atan2(y2 - y1, x2 - x1);
+    ctx.strokeStyle = rgba(color, 0.55); ctx.lineWidth = 1.6;
+    ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+    ctx.fillStyle = rgba(color, 0.9);
+    ctx.beginPath(); ctx.moveTo(x2, y2); ctx.lineTo(x2 - 11 * Math.cos(ang - 0.4), y2 - 11 * Math.sin(ang - 0.4)); ctx.lineTo(x2 - 11 * Math.cos(ang + 0.4), y2 - 11 * Math.sin(ang + 0.4)); ctx.closePath(); ctx.fill();
+  };
+  for (const w of wp) {
+    const dx = w.x - G.cx, dy = w.y - G.cy, d = Math.hypot(dx, dy), ux = dx / d, uy = dy / d;
+    arrow(G.cx + ux * 44, G.cy + uy * 44, w.x - ux * 34, w.y - uy * 34, PK);
+    // pulse on the spoke
+    const p = 0.35 + rnd() * 0.4;
+    const px = lerp(G.cx, w.x, p), py = lerp(G.cy, w.y, p);
+    glow(px, py, 18, rgba(PK, 0.5)); ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(px, py, 2.6, 0, Math.PI * 2); ctx.fill();
+  }
+  // worker nodes
+  for (const w of wp) {
+    glow(w.x, w.y, 46, rgba(PK, 0.22));
+    ctx.fillStyle = '#0c0a26'; ctx.strokeStyle = rgba(PK, 0.9); ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(w.x, w.y, 30, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = rgba(PK, 0.95); ctx.font = mono(15, 600); ctx.textAlign = 'center'; ctx.fillText(w.nm, w.x, w.y + 5);
+  }
+  // orchestrator
+  glow(G.cx, G.cy, 90, rgba(VI, 0.35));
+  ctx.fillStyle = '#0c0a26'; ctx.strokeStyle = rgba(VI, 1); ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.arc(G.cx, G.cy, 42, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+  ctx.strokeStyle = rgba(VI, 0.35); ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(G.cx, G.cy, 52, 0, Math.PI * 2); ctx.stroke();
+  ctx.fillStyle = '#fff'; ctx.font = mono(14, 600); ctx.textAlign = 'center';
+  ctx.fillText('orchestrator', G.cx, G.cy + 5);
+
+  // ---------- data flow across the bottom ----------
+  const fy = 705, fx1 = P.x + P.w + 40, fx2 = G.cx - 270;
+  const fg = ctx.createLinearGradient(fx1, 0, fx2, 0);
+  fg.addColorStop(0, rgba(CY, 0.8)); fg.addColorStop(1, rgba(PK, 0.8));
+  ctx.strokeStyle = fg; ctx.lineWidth = 1.5; ctx.setLineDash([2, 10]);
+  ctx.beginPath(); ctx.moveTo(fx1, fy); ctx.lineTo(fx2, fy); ctx.stroke(); ctx.setLineDash([]);
+  const stops = ['frames', 'tracks (m)', 'events', 'decision'];
+  stops.forEach((s, i) => {
+    const x = lerp(fx1 + 60, fx2 - 60, i / (stops.length - 1)), t = (x - fx1) / (fx2 - fx1);
+    glow(x, fy, 22, colorAt(t, 0.5));
+    ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(x, fy, 4, 0, Math.PI * 2); ctx.fill();
+    ctx.font = mono(18); ctx.textAlign = 'center'; ctx.fillStyle = colorAt(t, 0.9); ctx.fillText(s, x, fy + 34);
+    if (i < stops.length - 1) { ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.fillText('→', lerp(fx1 + 60, fx2 - 60, (i + 0.5) / (stops.length - 1)), fy + 34); }
+  });
+
+  // scrim behind the headline
+  const scrim = ctx.createRadialGradient(W / 2, 350, 160, W / 2, 350, 720);
+  scrim.addColorStop(0, 'rgba(7,8,26,0.85)'); scrim.addColorStop(1, 'rgba(7,8,26,0)');
+  ctx.fillStyle = scrim; ctx.fillRect(0, 0, W, H);
+  // vignette
+  const v = ctx.createRadialGradient(W / 2, H / 2, 700, W / 2, H / 2, 1500);
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.45)');
+  ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+
+  // ---------- headline, drawn on canvas (gradient text in HTML mis-renders) ----------
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  const tg = ctx.createLinearGradient(W / 2 - 560, 0, W / 2 + 560, 0);
+  tg.addColorStop(0, '#79dafa'); tg.addColorStop(0.55, '#b9a5ff'); tg.addColorStop(1, '#ff6e96');
+  ctx.save();
+  ctx.font = '900 100px "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif';
+  ctx.letterSpacing = '4px';
+  ctx.shadowColor = 'rgba(159,176,255,0.7)'; ctx.shadowBlur = 44;
+  ctx.fillStyle = tg; ctx.fillText('SEE · THINK · ACT', W / 2 + 2, 360);
+  ctx.shadowBlur = 0; ctx.fillText('SEE · THINK · ACT', W / 2 + 2, 360);
+  ctx.restore();
+  ctx.font = mono(24); ctx.fillStyle = 'rgba(121,218,250,0.85)';
+  ctx.save(); ctx.letterSpacing = '10px'; ctx.fillText('// PERCEPTION TO AGENTS · EDGE TO CLOUD', W / 2, 262); ctx.restore();
+</script>
+</body>
+</html>
