@@ -134,7 +134,6 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
 ## 🤝 Find me
 
 <p>
-  <a href="https://psheon.buxx.finance"><img src="https://img.shields.io/badge/Blog-0A0A23?style=for-the-badge&logo=rss&logoColor=79dafa" alt="Blog" /></a>
   <a href="https://twitter.com/0xPSheon"><img src="https://img.shields.io/badge/X-0A0A23?style=for-the-badge&logo=x&logoColor=ffffff" alt="X / Twitter" /></a>
   <a href="https://www.linkedin.com/in/psheon/"><img src="https://img.shields.io/badge/LinkedIn-0A0A23?style=for-the-badge&logoColor=79dafa" alt="LinkedIn" /></a>
 </p>
