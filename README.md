@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/images/welcome-banner.png" alt="See · Think · Act — computer vision · multi-agent · LLM · edge" width="100%" />
+  <img src="./assets/images/welcome-banner.webp" alt="See · Think · Act — computer vision · multi-agent · LLM · edge" width="100%" />
 </div>
 
 <p align="center">
@@ -10,7 +10,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/PSheon?style=flat-square&color=79dafa&labelColor=0A0A23&label=followers" alt="followers" />
-  <img src="https://komarev.com/ghpvc/?username=psheon&style=flat-square&color=ff6e96&label=visitors" alt="visitors" />
 </p>
 
 <img src="./assets/images/divider.svg" alt="" width="100%" />
@@ -106,6 +105,7 @@ I'm **Paul**. I build machines that see and agents that act, and I like to own t
 ## 🤝 Find me
 
 <p>
-  <a href="https://twitter.com/0xPSheon"><img src="https://img.shields.io/badge/X-0A0A23?style=for-the-badge&logo=x&logoColor=ffffff" alt="X / Twitter" /></a>
-  <a href="https://www.linkedin.com/in/psheon/"><img src="https://img.shields.io/badge/LinkedIn-0A0A23?style=for-the-badge&logoColor=79dafa" alt="LinkedIn" /></a>
+  <a href="https://x.com/paul_sheon"><img src="https://img.shields.io/badge/X-0A0A23?style=for-the-badge&logo=x&logoColor=ffffff" alt="X" /></a>
+  <a href="https://www.linkedin.com/in/psheon/"><img src="https://img.shields.io/badge/LinkedIn-0A0A23?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzc5ZGFmYSI%2BPHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjVhMi4wNiAyLjA2IDAgMCAxIDIuMDYzLTIuMDYzYzEuMTQgMCAyLjA2NC45MjUgMi4wNjQgMi4wNjNzLS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg%3D%3D" alt="LinkedIn" /></a>
+  <a href="mailto:pauljiang61020@gmail.com"><img src="https://img.shields.io/badge/Email-0A0A23?style=for-the-badge&logo=gmail&logoColor=ff6e96" alt="Email" /></a>
 </p>
