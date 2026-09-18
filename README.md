@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="./assets/images/welcome-banner.png" alt="AI Engineer — LLM agents · RAG · tool calling · evals" width="100%" />
+  <img src="./assets/images/welcome-banner.png" alt="See · Think · Act — computer vision · multi-agent · LLM · edge" width="100%" />
 </div>
 
 <p align="center">
   <a href="https://github.com/PSheon">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=79DAFA&center=true&vCenter=true&width=720&lines=Building+AI-native+products+end+to+end;LLM+agents+%C2%B7+RAG+%C2%B7+tool+calling+%C2%B7+evals;Frontend+Architect+turned+AI+Engineer" alt="typing intro" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2600&pause=900&color=79DAFA&center=true&vCenter=true&width=760&lines=Machines+that+see%2C+agents+that+act;Multi-task+perception+on+the+edge+%E2%80%94+one+forward+pass;Multi-agent+orchestration+%C2%B7+LLM+%C2%B7+MCP;From+CCTV+frames+to+decisions%2C+in+metres" alt="typing intro" />
   </a>
 </p>
 
@@ -17,65 +17,98 @@
 
 ## Hi there 👋
 
-I'm **Paul**. I design agentic systems and ship them as production web apps.
+> 紙上得來終覺淺，絕知此事要躬行。
+> <sub>What you read stays shallow; to truly know a thing, you have to build it.</sub>
 
-Ten years of frontend architecture taught me that the hard part of AI products is never the model. It is the glue: tool contracts, state, retries, evals, and an interface that makes a probabilistic system feel dependable. That is the part I build.
+I'm **Paul**. I build machines that see and agents that act, and I like to own the whole path: the perception model on the edge device, the tracks and events it produces, and the agents that decide what to do with them.
 
-- 🧠 **Now:** LLM agents for financial analysis (LangGraph, tool calling, structured output)
-- 🧩 **Stack of choice:** Python + TypeScript, Next.js on the front, agents on the back
-- 🔭 **Exploring:** multi-agent orchestration, MCP servers, eval-driven prompt iteration
-- 💬 **Ask me about:** agent architecture, RAG that actually retrieves, React at scale
+- 👁 **Computer vision** — multi-task perception networks, teacher / student distillation, ONNX / TensorRT on Jetson
+- 🤝 **Multi-agent systems** — orchestrator / worker designs, MCP tool contracts, edge-and-cloud split
+- 🧠 **LLM** — multimodal document understanding, structured output, VLMs on trigger rather than on every frame
+- ⚡ **Edge** — RTSP ingest, GStreamer, WebRTC, Rust and Kotlin Multiplatform where Python is too slow
+- 📍 Kaohsiung, Taiwan · building at [Syncrobotic](https://syncrobotic.ai/)
 
 <img src="./assets/images/divider.svg" alt="" width="100%" />
 
-## 🚀 What I'm building
+## 🔭 What I'm building
 
-<!-- TODO(paul): 補上真實的架構描述、模型與資料來源，讓招募方看得到 agent 的深度 -->
+### [HydraNet](https://github.com/Syncrobotic/SyncAI-Lib-HydraNet) — one camera, one model, everything in metres
 
-| Project | What it does | Built with |
-| :-- | :-- | :-- |
-| [**Trading Analysis Bot**](https://analysis-bot-stage.buxx.finance/strategy/dashboard/) | An agent that ingests market data, reasons over strategies with tool calls, and surfaces them on a live dashboard. | LangGraph · Gemini · Python · Next.js |
-| [**Buxx Finance**](https://app.buxx.finance/project/list/) | A DeFi platform for project discovery and on-chain participation. | Next.js · TypeScript · Solidity · Ethereum |
+<a href="https://github.com/Syncrobotic/SyncAI-Lib-HydraNet">
+  <img src="https://raw.githubusercontent.com/Syncrobotic/SyncAI-Lib-HydraNet/main/assets/demo_Kaohsiung-cam04.gif" alt="HydraNet demo: detections and tracks on the left, the metric 3D scene with live dwell field on the right" width="100%" />
+</a>
+
+<sub>Left: person boxes and confirmed tracks, staff / customer verdict per person. Right: the same moment in metres, the store's fixtures reconstructed from one static plate, amber floor tiles are the live dwell field. Every face is blurred by the pipeline itself.</sub>
+
+- **One ~8M-parameter network, one forward pass.** A shared RegNetX-800MF + BiFPN trunk carrying detection (`person`, `bag`, `device`, `boxed_stock`), pose (17 keypoints decoded inside the boxes) and terrain segmentation (`floor`, `wall`, `column`, `fixture`, `person`).
+- **Teachers once, student every frame.** SAM 3, Grounding DINO, Depth-Anything V2 and ViTPose run once per camera to label and to fit the scene geometry. Anything constant on a fixed camera is cached, never learned. Only what changes frame to frame spends the GPU.
+- **Tracks in metres, not pixels.** Boxes become floor positions through the cached geometry, so dwell, paths and queues come out in real units. Exported to ONNX / TensorRT for Jetson Orin, budgeted at 96 streams × 5 fps.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧠 LLM</h3>
+      <p><a href="https://github.com/PSheon/PDF2Markdown"><b>PDF2Markdown</b></a> — multimodal LLM transcription of PDFs and images into clean Markdown: tables, formulas and diagrams preserved. Gemini-powered, model-swappable.</p>
+      <p>In HydraNet the VLM is a <i>trigger</i>, not a per-frame cost: rules and a tiny temporal model raise events, the VLM explains them.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🤝 Multi-Agent</h3>
+      <p><b>Omnie agent orchestrator</b> — an orchestrator / worker design split across edge and cloud: perception workers stay on the device next to the camera, planning and retrieval run where the big models live, MCP defines the tool contract between them.</p>
+      <p><sub>Private for now. Architecture notes coming.</sub></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>👁 Computer Vision</h3>
+      <p><a href="https://github.com/Syncrobotic/SyncAI-Lib-HydraNet"><b>HydraNet</b></a> — the multi-task perception network above, plus the commissioning pipeline (<code>syncai_bev3d</code>) that turns one static plate into a metric 3D scene, walkable floor, shelf ROIs and false-positive polygons per camera.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚡ Edge</h3>
+      <p><a href="https://github.com/Syncrobotic/SyncAI-Data-RtspRecorder"><b>RtspRecorder</b></a> — multi-stream RTSP recording in Rust: auto-segment, reconnect, cross-day schedules, MKV → MP4, upload to GCS.</p>
+      <p><a href="https://github.com/Syncrobotic/SyncAI-Lib-KmpWebRTC"><b>KmpWebRTC</b></a> — Kotlin Multiplatform WebRTC SDK with HTTP signaling and per-direction media control, zero WebRTC boilerplate.</p>
+    </td>
+  </tr>
+</table>
 
 <img src="./assets/images/divider.svg" alt="" width="100%" />
 
 ## 🧰 Stack
 
-**AI / Agents**
+**Vision**
 
 <p>
-  <img src="https://img.shields.io/badge/LangGraph-0A0A23?style=for-the-badge&logo=langgraph&logoColor=ff6e96" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/LangChain-0A0A23?style=for-the-badge&logo=langchain&logoColor=ff6e96" alt="LangChain" />
+  <img src="https://img.shields.io/badge/PyTorch-0A0A23?style=for-the-badge&logo=pytorch&logoColor=79dafa" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/ONNX-0A0A23?style=for-the-badge&logo=onnx&logoColor=79dafa" alt="ONNX" />
+  <img src="https://img.shields.io/badge/TensorRT%20%C2%B7%20Jetson-0A0A23?style=for-the-badge&logo=nvidia&logoColor=79dafa" alt="TensorRT / Jetson" />
+  <img src="https://img.shields.io/badge/OpenCV-0A0A23?style=for-the-badge&logo=opencv&logoColor=79dafa" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-0A0A23?style=for-the-badge&logo=huggingface&logoColor=79dafa" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/Python-0A0A23?style=for-the-badge&logo=python&logoColor=79dafa" alt="Python" />
+</p>
+
+**LLM / Agents**
+
+<p>
   <img src="https://img.shields.io/badge/Claude-0A0A23?style=for-the-badge&logo=claude&logoColor=ff6e96" alt="Claude" />
   <img src="https://img.shields.io/badge/Gemini-0A0A23?style=for-the-badge&logo=googlegemini&logoColor=ff6e96" alt="Gemini" />
-  <img src="https://img.shields.io/badge/MCP-0A0A23?style=for-the-badge&logo=modelcontextprotocol&logoColor=ff6e96" alt="MCP" />
   <img src="https://img.shields.io/badge/Ollama-0A0A23?style=for-the-badge&logo=ollama&logoColor=ff6e96" alt="Ollama" />
-  <img src="https://img.shields.io/badge/Python-0A0A23?style=for-the-badge&logo=python&logoColor=ff6e96" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-0A0A23?style=for-the-badge&logo=pytorch&logoColor=ff6e96" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-0A0A23?style=for-the-badge&logo=huggingface&logoColor=ff6e96" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/LangGraph-0A0A23?style=for-the-badge&logo=langgraph&logoColor=ff6e96" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/MCP-0A0A23?style=for-the-badge&logo=modelcontextprotocol&logoColor=ff6e96" alt="MCP" />
 </p>
 
-**Web**
+**Edge / Infra**
 
 <p>
-  <img src="https://img.shields.io/badge/TypeScript-0A0A23?style=for-the-badge&logo=typescript&logoColor=79dafa" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-0A0A23?style=for-the-badge&logo=react&logoColor=79dafa" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-0A0A23?style=for-the-badge&logo=nextdotjs&logoColor=79dafa" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Tailwind-0A0A23?style=for-the-badge&logo=tailwindcss&logoColor=79dafa" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Three.js-0A0A23?style=for-the-badge&logo=threedotjs&logoColor=79dafa" alt="Three.js" />
-  <img src="https://img.shields.io/badge/Rust-0A0A23?style=for-the-badge&logo=rust&logoColor=79dafa" alt="Rust" />
-  <img src="https://img.shields.io/badge/Solidity-0A0A23?style=for-the-badge&logo=solidity&logoColor=79dafa" alt="Solidity" />
-</p>
-
-**Infra**
-
-<p>
-  <img src="https://img.shields.io/badge/PostgreSQL-0A0A23?style=for-the-badge&logo=postgresql&logoColor=b9a5ff" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Redis-0A0A23?style=for-the-badge&logo=redis&logoColor=b9a5ff" alt="Redis" />
+  <img src="https://img.shields.io/badge/ROS-0A0A23?style=for-the-badge&logo=ros&logoColor=b9a5ff" alt="ROS" />
+  <img src="https://img.shields.io/badge/GStreamer-0A0A23?style=for-the-badge&logo=gstreamer&logoColor=b9a5ff" alt="GStreamer" />
+  <img src="https://img.shields.io/badge/WebRTC-0A0A23?style=for-the-badge&logo=webrtc&logoColor=b9a5ff" alt="WebRTC" />
+  <img src="https://img.shields.io/badge/Kotlin%20Multiplatform-0A0A23?style=for-the-badge&logo=kotlin&logoColor=b9a5ff" alt="Kotlin Multiplatform" />
+  <img src="https://img.shields.io/badge/Rust-0A0A23?style=for-the-badge&logo=rust&logoColor=b9a5ff" alt="Rust" />
+  <img src="https://img.shields.io/badge/Solidity-0A0A23?style=for-the-badge&logo=solidity&logoColor=b9a5ff" alt="Solidity" />
   <img src="https://img.shields.io/badge/Docker-0A0A23?style=for-the-badge&logo=docker&logoColor=b9a5ff" alt="Docker" />
-  <img src="https://img.shields.io/badge/Vercel-0A0A23?style=for-the-badge&logo=vercel&logoColor=b9a5ff" alt="Vercel" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-0A0A23?style=for-the-badge&logo=githubactions&logoColor=b9a5ff" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/PostgreSQL-0A0A23?style=for-the-badge&logo=postgresql&logoColor=b9a5ff" alt="PostgreSQL" />
 </p>
+
+<sub>Also: TypeScript · React · Next.js. Ten years of frontend architecture is what the dashboards are built on.</sub>
 
 <img src="./assets/images/divider.svg" alt="" width="100%" />
 
@@ -101,12 +134,10 @@ Ten years of frontend architecture taught me that the hard part of AI products i
 
 <img src="./assets/images/divider.svg" alt="" width="100%" />
 
-## 🤝 Connect
+## 🤝 Find me
 
 <p>
+  <a href="https://psheon.buxx.finance"><img src="https://img.shields.io/badge/Blog-0A0A23?style=for-the-badge&logo=rss&logoColor=79dafa" alt="Blog" /></a>
   <a href="https://twitter.com/0xPSheon"><img src="https://img.shields.io/badge/X-0A0A23?style=for-the-badge&logo=x&logoColor=ffffff" alt="X / Twitter" /></a>
-  <a href="https://www.linkedin.com/in/psheon/"><img src="https://img.shields.io/badge/LinkedIn-0A0A23?style=for-the-badge&logo=linkedin&logoColor=79dafa" alt="LinkedIn" /></a>
-  <!-- TODO(paul): 補上 Email 或 Blog 連結，例如 mailto: 或個人網站 -->
+  <a href="https://www.linkedin.com/in/psheon/"><img src="https://img.shields.io/badge/LinkedIn-0A0A23?style=for-the-badge&logoColor=79dafa" alt="LinkedIn" /></a>
 </p>
-
-<p align="center"><sub>Open to conversations about agent architecture, AI product work, and interesting problems.</sub></p>
