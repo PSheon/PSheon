@@ -17,9 +17,6 @@
 
 ## Hi there 👋
 
-> 紙上得來終覺淺，絕知此事要躬行。
-> <sub>What you read stays shallow; to truly know a thing, you have to build it.</sub>
-
 I'm **Paul**. I build machines that see and agents that act, and I like to own the whole path: the perception model on the edge device, the tracks and events it produces, and the agents that decide what to do with them.
 
 - 👁 **Computer vision** — multi-task perception networks, teacher / student distillation, ONNX / TensorRT on Jetson
